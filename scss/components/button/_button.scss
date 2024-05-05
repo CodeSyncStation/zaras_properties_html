@@ -1,0 +1,59 @@
+@use "../../global" as *;
+@use "../../partials" as *;
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  @include transparent-button;
+  cursor: pointer;
+  opacity: 1;
+  margin: 0;
+  padding: 0;
+  @include transitionsall;
+
+  &:focus {
+    box-shadow: none;
+    outline: none;
+  }
+}
+
+// .btn-submit {
+//   background: $blue-green-500;
+//   @include border(solid, 2, $blue-green-500);
+//   @include radius(8);
+//   @include flex-center;
+//   gap: size(8);
+//   width: size(180);
+//   height: size(56);
+//   padding: size(16);
+
+//   .text {
+//     color: $white;
+//     font-size: size(16);
+//     font-weight: 500;
+//   }
+
+//   .icon {
+//     @include square(18);
+//     @include flex-center;
+//     overflow: hidden;
+//   }
+
+//   @include hover {
+//     background: $white;
+
+//     .text {
+//       color: $blue-green-500;
+//     }
+
+//     .icon {
+//       svg {
+//         path {
+//           stroke: $blue-green-500;
+//         }
+//       }
+//     }
+//   }
+// }
+
