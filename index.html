@@ -1,31 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zaras Properties - Portfolio</title> 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zaras Properties - Portfolio</title>
     <!-- FAVICON  -->
-    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.ico"
+      type="image/x-icon"
+    />
     <!-- BOOTSTRAP -->
-    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css" />
     <!-- MAIN CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
-
-</head>
-<body>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
     <!-- ================== HEADER PART START================== -->
     <header>
+      <nav class="navbar navbar-expand-lg z-3 fixed-top">
         <div class="container">
-            Header part
-        </div>
-    </header>
-    <!-- =================== HEADER PART END=================== --> 
+          <a href="#home">
+            <!-- <img
+            class="logo"
+            src="assets/images/Logo.svg"
+            alt="Zaras Properties"
+        /> -->
+            Zaras
+          </a>
+          <div
+            class="d-flex d-lg-none justify-content-center align-items-center gap-3"
+            role="search"
+          >
+            <!-- <a href="/login" class="login_btn">Login</a> -->
 
+            <span class="contact">
+              <i class="bi bi-telephone-forward"></i>
+              +447738940597
+            </span>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas flex-1 offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              >
+                <i class="bi bi-x-lg"></i>
+              </button>
+            </div>
+
+            <div class="offcanvas-body bg-transparent">
+              <div class="d-flex justify-content-between w-100">
+                <ul class="navbar-nav mx-auto mb-2 mt-lg-2">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about">About us</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="#testimonials">Testimonials</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="#whyUs">Why Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                  </li>
+                </ul>
+
+                <div
+                  class="d-lg-flex d-none justify-content-center align-items-center gap-3"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- =================== HEADER PART END=================== -->
 
     <!-- ================== FOOTER PART START================== -->
-    <footer>
-    </footer>
+    <footer></footer>
     <!-- =================== Footer PART END=================== -->
-    
-</body>
+
+    <!-- BOOTSTRAP JS -->
+    <script src="libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>

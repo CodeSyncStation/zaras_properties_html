@@ -1,3 +1,13 @@
 @use "../../global" as *;
 @use "../../partials" as *;
 
+.navbar {
+  @include setBgColor($black-300, $white);
+  // height: size(50);
+  .offcanvas {
+    min-height: 0;
+  }
+  .contact {
+    color: $primary;
+  }
+}

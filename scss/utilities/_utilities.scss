@@ -1,3 +1,6 @@
 @use "../global" as *;
 @use "../partials" as *;
 
+.text-primary {
+  color: $text-primary;
+}
