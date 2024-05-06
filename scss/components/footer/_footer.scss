@@ -130,29 +130,29 @@ footer {
   }
 }
 .footer-bottom {
-  background: #101010;
-  padding: 20px 0;
-  .bottom-wrapper {
+background: #101010;
+padding: 20px 0;
+.bottom-wrapper {
     @include flex-between;
     align-items: center;
     flex-direction: column;
     gap: size(20);
     @include breakpoint(mobile576) {
-      flex-direction: row;
+    flex-direction: row;
     }
     p {
-      color: #979797;
+    color: #979797;
     }
     .footer-link {
-      @include list-horizontal;
-      gap: size(20);
+    @include list-horizontal;
+    gap: size(20);
 
-      a {
+    a {
         color: #666;
         @include hover {
-          color: #ffbc13;
+        color: #ffbc13;
         }
-      }
     }
-  }
+    }
+}
 }

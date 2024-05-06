@@ -40,10 +40,14 @@
     .locations {
       @include list-vertical;
       gap: size(10);
+      margin-top: 40px;
       li {
         display: flex;
         align-items: center;
-        gap: size(10)
+        gap: size(10);
+       span {
+        color:rgb(119, 119, 119);
+       }
       }
       .icon {
         @include square(30);
@@ -51,6 +55,9 @@
         @include flex-center;
         padding: size(10);
         flex-shrink: 0;
+        i {
+          color: rgb(119, 119, 119);
+        }
       }
     }
   }
