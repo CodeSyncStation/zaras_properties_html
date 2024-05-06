@@ -413,6 +413,7 @@ input[type=search]::-webkit-search-results-decoration:focus {
   text-transform: uppercase;
   margin-bottom: 1.875rem;
   position: relative;
+  font-size: 1.4em;
 }
 .section-title::after {
   content: "";
@@ -460,6 +461,34 @@ footer .links .footer-links a::before {
   content: "\f101";
   font-family: FontAwesome;
   margin-right: 0.625rem;
+}
+footer .footer-address {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  padding: 0;
+  margin: 0;
+}
+footer .footer-address li {
+  display: flex;
+  gap: 0.625rem;
+  color: #979797;
+}
+footer .socials {
+  display: flex;
+  gap: 5px;
+  margin-top: 50px;
+}
+footer .socials a {
+  border: 1px solid #333;
+  background-color: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  height: 38px;
+  width: 38px;
+  color: #fff;
 }
 
 .preloader {
