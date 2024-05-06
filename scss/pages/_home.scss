@@ -22,4 +22,57 @@
       }
     }
   }
+  .left-info {
+    .title {
+      font-family: "Montserrat", sans-serif;
+      color: #4b4b4b;
+      line-height: 1.5;
+      margin: 0 0 12px;
+      font-weight: 500;
+      text-rendering: optimizeLegibility;
+      font-size: 20px;
+    }
+    .des {
+      color: #777;
+      font-size: 14px;
+      line-height: 1.8;
+    }
+    .locations {
+      @include list-vertical;
+      gap: size(10);
+      li {
+        display: flex;
+        align-items: center;
+        gap: size(10)
+      }
+      .icon {
+        @include square(30);
+        background-color: #f8f8f8;
+        @include flex-center;
+        padding: size(10);
+        flex-shrink: 0;
+      }
+    }
+  }
+  .contact-form {
+    .form-title {
+      font-family: "Montserrat", sans-serif;
+      color: #4b4b4b;
+      line-height: 1.5;
+      margin: 0 0 12px;
+      font-weight: 500;
+      text-rendering: optimizeLegibility;
+      font-size: 20px;
+    }
+    input,
+    textarea {
+      border: 1px solid #eaeaea;
+      @include w100;
+      padding: 10px;
+      @include transitionsall;
+      &:focus {
+        border-color: gray;
+      }
+    }
+  }
 }
