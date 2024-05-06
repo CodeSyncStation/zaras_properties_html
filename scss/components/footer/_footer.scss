@@ -89,7 +89,7 @@ footer {
     margin: 0;
     align-items: center;
     @include breakpoint(tab992) {
-      align-items: flex-start
+      align-items: flex-start;
     }
 
     li {
@@ -127,24 +127,29 @@ footer {
   }
 }
 .footer-bottom {
-    background: #101010;
-    padding: 20px 0;
-    .bottom-wrapper {
-        @include flex-between;
-        align-items: center;
-        p {
-            color: #979797;
-        }
-        .footer-link {
-            @include list-horizontal;
-            gap: size(20);
-            
-            a {
-                color: #666;
-                @include hover {
-                    color: #ffbc13;
-                }
-            }
-        }
+  background: #101010;
+  padding: 20px 0;
+  .bottom-wrapper {
+    @include flex-between;
+    align-items: center;
+    flex-direction: column;
+    gap: size(20);
+    @include breakpoint(mobile576) {
+      flex-direction: row;
     }
-} 
+    p {
+      color: #979797;
+    }
+    .footer-link {
+      @include list-horizontal;
+      gap: size(20);
+
+      a {
+        color: #666;
+        @include hover {
+          color: #ffbc13;
+        }
+      }
+    }
+  }
+}
