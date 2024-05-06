@@ -1,4 +1,23 @@
 @use "../../global" as *;
 @use "../../partials" as *;
 
+.section-title {
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: size(30);
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    background-color: #ffbc13;
+    bottom: size(-10);
+    left: 0;
+  }
+}
 
+footer {
+  background-color: #1a1a1a;
+  padding: 70px 0 60px;
+}
