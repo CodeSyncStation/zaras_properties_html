@@ -56,6 +56,12 @@
     gap: size(80);
     padding: 0;
     margin: 0;
+    li {
+      @include transitionsall;
+      @include hover {
+        transform: translateX(8px);
+      }
+    }
     .left {
       position: relative;
       flex-shrink: 0;
