@@ -18,6 +18,18 @@ button,
   }
 }
 
+.zp-btn {
+  @include radius(6);
+  @include setBgColor($primary, $white);
+  @include font($primaryFont, 18, bold, normal, 24);
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 11px 18px;
+  @include hover {
+    background-color: $primary;
+  }
+}
+
 // .btn-submit {
 //   background: $blue-green-500;
 //   @include border(solid, 2, $blue-green-500);
@@ -56,4 +68,3 @@ button,
 //     }
 //   }
 // }
-
