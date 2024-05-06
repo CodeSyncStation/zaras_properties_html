@@ -14,7 +14,12 @@
     height: 3px;
     background-color: #ffbc13;
     bottom: size(-10);
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    @include breakpoint(tab992) {
+      transform: translate(0);
+      left: 0;
+    }
   }
 }
 
@@ -27,6 +32,12 @@ footer {
   .footer-left {
     @include flex-column;
     gap: size(20);
+    align-items: center;
+    text-align: center;
+    @include breakpoint(tab992) {
+      align-items: flex-start;
+      text-align: left;
+    }
     .footer-logo {
       height: 40px;
     }
@@ -34,8 +45,26 @@ footer {
       color: #979797;
     }
   }
+  .footer-middle {
+    @include flex;
+    flex-direction: column;
+    align-items: center;
+    @include breakpoint(tab992) {
+      align-items: flex-start;
+    }
+  }
+  .footer-right {
+    @include flex-column;
+    text-align: center;
+    align-items: center;
+    @include breakpoint(tab992) {
+      align-items: flex-start;
+    }
+  }
   .links {
     display: flex;
+    justify-content: space-between;
+    @include w100;
     .footer-links {
       display: flex;
       flex-direction: column;
@@ -61,6 +90,10 @@ footer {
     gap: size(10);
     padding: 0;
     margin: 0;
+    align-items: center;
+    @include breakpoint(tab992) {
+      align-items: flex-start;
+    }
 
     li {
       @include flex;
@@ -97,24 +130,29 @@ footer {
   }
 }
 .footer-bottom {
-    background: #101010;
-    padding: 20px 0;
-    .bottom-wrapper {
-        @include flex-between;
-        align-items: center;
-        p {
-            color: #979797;
-        }
-        .footer-link {
-            @include list-horizontal;
-            gap: size(20);
-            
-            a {
-                color: #666;
-                @include hover {
-                    color: #ffbc13;
-                }
-            }
+background: #101010;
+padding: 20px 0;
+.bottom-wrapper {
+    @include flex-between;
+    align-items: center;
+    flex-direction: column;
+    gap: size(20);
+    @include breakpoint(mobile576) {
+    flex-direction: row;
+    }
+    p {
+    color: #979797;
+    }
+    .footer-link {
+    @include list-horizontal;
+    gap: size(20);
+
+    a {
+        color: #666;
+        @include hover {
+        color: #ffbc13;
         }
     }
+    }
+}
 }
