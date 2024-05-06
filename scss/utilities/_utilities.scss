@@ -2,5 +2,5 @@
 @use "../partials" as *;
 
 .text-primary {
-  color: $text-primary;
+  color: $primary !important;
 }

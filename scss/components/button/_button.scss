@@ -20,13 +20,15 @@ button,
 
 .zp-btn {
   @include radius(6);
-  @include setBgColor($primary, $white);
-  @include font($primaryFont, 18, bold, normal, 24);
+  @include setBgColor(transparent, $primary);
+  @include font($primaryFont, 18, normal, normal, 24);
+  font-size: clamp(14px, 1.5vw, 18px);
   cursor: pointer;
   transition: 0.3s;
   padding: 11px 18px;
+  border: 2px solid $primary;
   @include hover {
-    background-color: $primary;
+    @include setBgColor($primary, $white);
   }
 }
 
