@@ -8,7 +8,75 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    gap: size(20);
+    @include breakpoint(tab992) {
+      flex-direction: row;
+      align-items: flex-start;
+      text-align: left;
+    }
+    .title {
+      color: #fff;
+    }
+    .des-wrapper {
+      @include flex-column;
+      gap: size(10);
+      align-items: center;
+      @include breakpoint(tab992) {
+        align-items: flex-start;
+      }
+      .des {
+        color: #fff;
+        @include breakpoint(tab992) {
+          text-align-last: left;
+        }
+      }
+      .getstarted {
+        background: #274E75;
+        @include radius(7);
+        padding:12px 16px;
+        color: #fff;
+        color: #FFF;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 0.8px;
+        text-transform: capitalize;
+        @include hover {
+          transform: scale(0.9);
+        }
+      }
+    }
+    
   }
+  .investor-points {
+      @include flex-column;
+      list-style: none;
+      justify-content: flex-start;
+      .left {
+        position: relative;
+        flex-shrink: 0;
+        width: 80px;
+        svg {
+          height: 100%;
+          width: 100%;
+        }
+        .number {
+          position: absolute;
+          top: 50%;
+          font-size: 30px;
+          left: 50%;
+          transform: translate(-50%,-50%);
+          font-weight: 700;
+          color: #fff;
+        }
+      } 
+      .right {
+        color: #fff;
+        @include flex-column;
+        gap: size(10);
+      }
+    }
 }
 .contactus {
   padding: size(50) size(0);
