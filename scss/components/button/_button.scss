@@ -26,9 +26,7 @@ button,
   transition: 0.3s;
   padding: 11px 18px;
   @include hover {
-    color: $primary;
-    background-color: $white;
-    outline: 1px solid $primary;
+    background-color: $primary;
   }
 }
 
