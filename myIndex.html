@@ -32,9 +32,9 @@
   <body>
     <!-- ================== HEADER PART START================== -->
     <header>
-      <nav class="navbar navbar-expand-lg z-3 fixed-top">
+      <nav id="navbar" class="navbar navbar-expand-lg z-3 fixed-top">
         <div class="container">
-          <a href="#home">
+          <a href="#hero">
             <img
               class="logo"
               src="https://themes247.net/html5/construction-template/demo/assets/img/logo-light@2x.png"
@@ -89,7 +89,7 @@
               <div class="d-flex justify-content-between w-100">
                 <ul class="navbar-nav mx-auto mb-2 mt-lg-2">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/"
+                    <a class="nav-link active_nav_link" aria-current="page" href="#hero"
                       >Home</a
                     >
                   </li>
@@ -147,7 +147,7 @@
             planning, <br />
             dedication, and skilled execution.
           </p>
-          <button class="zp-btn">Contact us</button>
+          <button class="zp-btn-outline">Contact us</button>
         </div>
       </div>
     </section>
@@ -169,10 +169,9 @@
             <p class="des">
               Zaras properties we take pride in all our projects . We are a
               forward-thinking property development company that embraces future
-              home standards. We oversee the full property development cycle, We
-              acquire, design and repurpose shabby commercial properties into
-              modern rental homes for next generations.
+              home standards.
             </p>
+            <button class="zp-btn">See Portfolio</button>
           </div>
 
           <div>
@@ -185,35 +184,24 @@
             >
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <img src="assets/images/WhatsApp Image 2024-05-01 at 18.54.37_2dd35f38.jpg" />
+                  <img src="assets/images/drawing-room05.jpg" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                  <img src="assets/images/market-front-image09.jpg" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                  <img src="assets/images/bed-room-image04.jpg" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                  <img src="assets/images/home-front-image08.jpg" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                  <img src="assets/images/bathroom-image11.jpg" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                  <img src="assets/images/kitchen-image07.jpg" />
                 </div>
-                <div class="swiper-slide">
-                  <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
-                </div>
+               
               </div>
               <div class="swiper-button-next"></div>
               <div class="swiper-button-prev"></div>
@@ -221,35 +209,24 @@
             <div thumbsSlider="" class="swiper about-slider">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <img src="assets/images/WhatsApp Image 2024-05-01 at 18.54.37_2dd35f38.jpg" />
+                  <img src="assets/images/drawing-room05.jpg" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                  <img src="assets/images/market-front-image09.jpg" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                  <img src="assets/images/bed-room-image04.jpg" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                  <img src="assets/images/home-front-image08.jpg" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                  <img src="assets/images/bathroom-image11.jpg" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                  <img src="assets/images/kitchen-image07.jpg" />
                 </div>
-                <div class="swiper-slide">
-                  <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
-                </div>
+               
               </div>
             </div>
           </div>
@@ -345,5 +322,8 @@
 
     <!-- OUR SLIDER INSTANCE -->
     <script src="libs/swiper/swiper.js"></script>
+
+    <!-- MAIN JS SCRIPT -->
+    <script src="assets/js/main.js"></script>
   </body>
 </html>

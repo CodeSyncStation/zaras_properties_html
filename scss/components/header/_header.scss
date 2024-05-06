@@ -7,16 +7,16 @@
   .logo {
     width: min(50vw, 120px);
   }
-
   .offcanvas {
     min-height: 0;
-    background-color: #1a1a1a;
+    background-color: $black-800;
     width: min(70vw, 400px);
+
     .nav-link {
       color: $white;
       transition: 0.3s;
       margin: 0px 10px;
-      padding: 0;
+      padding: 5px 0;
       position: relative;
       &::after {
         content: "";
@@ -38,5 +38,16 @@
   }
   .contact {
     color: $primary;
+  }
+}
+
+.active_nav_link {
+  color: $primary !important;
+  font-weight: 500;
+  position: relative;
+  &::after {
+    width: 100% !important;
+    height: 2px;
+    background-color: $primary;
   }
 }
