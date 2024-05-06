@@ -20,4 +20,14 @@
 footer {
   background-color: #1a1a1a;
   padding: 70px 0 60px;
+  .footer-left {
+    @include flex-column;
+    gap: size(20);
+    .footer-logo {
+      height: 40px;
+    }
+    .footer-text {
+      color: #979797;
+    }
+  }
 }

@@ -428,6 +428,17 @@ footer {
   background-color: #1a1a1a;
   padding: 70px 0 60px;
 }
+footer .footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+footer .footer-left .footer-logo {
+  height: 40px;
+}
+footer .footer-left .footer-text {
+  color: #979797;
+}
 
 .preloader {
   background: hsl(0, 0%, 0%);
