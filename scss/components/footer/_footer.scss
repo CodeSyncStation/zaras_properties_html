@@ -53,6 +53,11 @@ footer {
       align-items: flex-start;
     }
   }
+  .footer-right {
+    @include flex-column;
+    text-align: center;
+    align-items: center;
+  }
   .links {
     display: flex;
     justify-content: space-between;
@@ -82,6 +87,10 @@ footer {
     gap: size(10);
     padding: 0;
     margin: 0;
+    align-items: center;
+    @include breakpoint(tab992) {
+      align-items: flex-start
+    }
 
     li {
       @include flex;
@@ -138,4 +147,4 @@ footer {
             }
         }
     }
-}
+} 
