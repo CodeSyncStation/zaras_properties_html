@@ -127,7 +127,6 @@
 }
 
 .about-slide {
-  height: 80%;
   width: 100%;
 }
 
@@ -152,4 +151,24 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+#about {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  .wrapper {
+    display: flex;
+    gap: 16px;
+    & > * {
+      width: 50%;
+    }
+    .section-title {
+      color: $black;
+      font-size: 1.758em;
+    }
+    .des {
+      @include font($secondaryFont, 18, normal, normal, 32);
+      color: $text-secondary;
+      padding: 10px;
+    }
+  }
 }
