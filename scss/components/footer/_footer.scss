@@ -57,6 +57,9 @@ footer {
     @include flex-column;
     text-align: center;
     align-items: center;
+    @include breakpoint(tab992) {
+      align-items: flex-start;
+    }
   }
   .links {
     display: flex;
