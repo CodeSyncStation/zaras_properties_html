@@ -99,4 +99,22 @@ footer {
 .footer-bottom {
     background: #101010;
     padding: 20px 0;
+    .bottom-wrapper {
+        @include flex-between;
+        align-items: center;
+        p {
+            color: #979797;
+        }
+        .footer-link {
+            @include list-horizontal;
+            gap: size(20);
+            
+            a {
+                color: #666;
+                @include hover {
+                    color: #ffbc13;
+                }
+            }
+        }
+    }
 }
