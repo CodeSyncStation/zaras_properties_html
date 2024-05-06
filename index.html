@@ -1,102 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Zaras Properties - Portfolio</title>
-    <!-- FAVICON  -->
-    <link
-      rel="shortcut icon"
-      href="assets/images/favicon.ico"
-      type="image/x-icon"
-    />
-    <!-- BOOTSTRAP -->
-    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css" />
-    <!-- MAIN CSS -->
-    <link rel="stylesheet" href="assets/css/style.css" />
-  </head>
-  <body>
-    <!-- ================== HEADER PART START================== -->
-    <header>
-      <nav class="navbar navbar-expand-lg z-3 fixed-top">
-        <div class="container">
-          <a href="#home">
-            <!-- <img
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zaras Properties - Portfolio</title>
+  <!-- FAVICON  -->
+  <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
+  <!-- BOOTSTRAP -->
+  <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css" />
+  <!-- FONTAWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- MAIN CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <!-- ================== HEADER PART START================== -->
+  <header class=" ">
+    <nav class="navbar navbar-expand-lg z-3 fixed-top">
+      <div class="container">
+        <a href="#home">
+          <!-- <img
             class="logo"
             src="assets/images/Logo.svg"
             alt="Zaras Properties"
         /> -->
-            Zaras
-          </a>
-          <div
-            class="d-flex d-lg-none justify-content-center align-items-center gap-3"
-            role="search"
-          >
-            <!-- <a href="/login" class="login_btn">Login</a> -->
+          Zaras
+        </a>
+        <div class="d-flex d-lg-none justify-content-center align-items-center gap-3" role="search">
+          <!-- <a href="/login" class="login_btn">Login</a> -->
 
-            <span class="contact">
-              <i class="bi bi-telephone-forward"></i>
-              +447738940597
-            </span>
+          <span class="contact">
+            <i class="bi bi-telephone-forward"></i>
+            +447738940597
+          </span>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas flex-1 offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+              <i class="bi bi-x-lg"></i>
+            </button>
           </div>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasNavbar"
-            aria-controls="offcanvasNavbar"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="offcanvas flex-1 offcanvas-end"
-            tabindex="-1"
-            id="offcanvasNavbar"
-            aria-labelledby="offcanvasNavbarLabel"
-          >
-            <div class="offcanvas-header">
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              >
-                <i class="bi bi-x-lg"></i>
-              </button>
-            </div>
 
-            <div class="offcanvas-body bg-transparent">
-              <div class="d-flex justify-content-between w-100">
-                <ul class="navbar-nav mx-auto mb-2 mt-lg-2">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/"
-                      >Home</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#about">About us</a>
-                  </li>
+          <div class="offcanvas-body bg-transparent">
+            <div class="d-flex justify-content-between w-100">
+              <ul class="navbar-nav mx-auto mb-2 mt-lg-2">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About us</a>
+                </li>
 
-                  <li class="nav-item">
-                    <a class="nav-link" href="#portfolio">Portfolio</a>
-                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
 
-                  <li class="nav-item">
-                    <a class="nav-link" href="#testimonials">Testimonials</a>
-                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#testimonials">Testimonials</a>
+                </li>
 
-                  <li class="nav-item">
-                    <a class="nav-link" href="#whyUs">Why Us</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#whyUs">Why Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
 
-                  <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact Us</a>
-                  </li>
-                </ul>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+              </ul>
 
                 <div
                   class="d-lg-flex d-none justify-content-center align-items-center gap-3"
@@ -113,11 +95,76 @@
     </header>
     <!-- =================== HEADER PART END=================== -->
 
-    <!-- ================== FOOTER PART START================== -->
-    <footer></footer>
-    <!-- =================== Footer PART END=================== -->
+  <!-- ================== FOOTER PART START================== -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="footer-left">
+            <h3 class="section-title">ABOUT US</h3>
+            <img src="https://themes247.net/html5/construction-template/demo/assets/img/logo-light@2x.png" alt=""
+              class="footer-logo">
+            <p class="footer-text">Building isn’t just a job. At the Construction Company, it is our passion. With every
+              project we undertake, we set the bar high and provide the best people in the industry, with a true love of
+              what we do to make our Customers’ vision a reality.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="footer-middle">
+            <h3 class="section-title">COMPANY LINKS</h3>
+            <div class="links">
+              <ul class="footer-links">
+                <li class="style-2"><a href="#">History</a></li>
+                <li class="style-2"><a href="#">Services</a></li>
+                <li class="style-2"><a href="#">Team &amp; Awards</a></li>
+                <li class="style-2"><a href="#">Delivery Methods</a></li>
+                <li class="style-2"><a href="#">Community</a></li>
+                <li class="style-2"><a href="#">Safety</a></li>
+              </ul>
+              <ul class="footer-links">
+                <li class="style-2"><a href="#">News &amp; Events</a></li>
+                <li class="style-2"><a href="#">Sustainability</a></li>
+                <li class="style-2"><a href="#">FAQ</a></li>
+                <li class="style-2"><a href="#">Portfolio</a></li>
+                <li class="style-2"><a href="#">Contact Us</a></li>
+                <li class="style-2"><a href="#">Shop</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="footer-right">
+            <h3 class="section-title">CONTACT INFO</h3>
+            <ul class="footer-address">
+              <li class="address">
+                <span class="hl">Address:</span>
+                <span class="text">1379 Shoreline Parkway, Mountain View, CA 94043, United States</span>
+              </li>
+              <li class="phone">
+                <span class="hl">Phone:</span>
+                <span class="text">+1 718-999-3939</span>
+              </li>
+              <li class="email">
+                <span class="hl">E-mail:</span>
+                <span class="text">contact@construction.com</span>
+              </li>
+            </ul>
+            <div class="socials">
+              <a target="_blank" href="#"><i class="fa fa-twitter"></i></a>
+              <a target="_blank" href="#"><i class="fa fa-facebook"></i></a>
+              <a target="_blank" href="#"><i class="fa fa-google-plus"></i></a>
+              <a target="_blank" href="#"><i class="fa fa-pinterest"></i></a>
+              <a target="_blank" href="#"><i class="fa fa-dribbble"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- =================== Footer PART END=================== -->
 
-    <!-- BOOTSTRAP JS -->
-    <script src="libs/bootstrap/js/bootstrap.bundle.min.js"></script>
-  </body>
+  <!-- BOOTSTRAP JS -->
+  <script src="libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>
