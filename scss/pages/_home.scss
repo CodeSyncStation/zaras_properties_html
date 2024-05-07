@@ -1,5 +1,6 @@
 @use "../global" as *;
 @use "../partials" as *;
+
 .investors {
   background-color: #1c2157;
   padding: size(80) size(0);
@@ -215,7 +216,7 @@
 
 .about-slider .swiper-slide {
   width: 25%;
-  height: 100%;
+  height: 5rem;
   opacity: 0.4;
 }
 
@@ -234,13 +235,22 @@
   padding-bottom: 6rem;
   .wrapper {
     display: flex;
+    flex-direction: column-reverse;
     gap: 16px;
-    & > * {
-      width: 50%;
+    @include breakpoint(tab992) {
+      flex-direction: row;
+      & > * {
+        width: 50%;
+      }
     }
+
     .section-title {
       color: $black;
       font-size: 1.758em;
+      &::after {
+        left: 0 !important;
+        transform: translateX(0) !important;
+      }
     }
     .des {
       @include font($secondaryFont, 18, normal, normal, 32);
