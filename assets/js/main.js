@@ -4,6 +4,8 @@ const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll(".nav-link");
 
 window.onload = function () {
+  changeNavbarBG();
+  activeNavLink();
   window.addEventListener("scroll", changeNavbarBG);
   window.addEventListener("scroll", activeNavLink);
 };
@@ -22,7 +24,7 @@ function activeNavLink() {
   const top = window.scrollY;
   sections.forEach((sec) => {
     const offset = sec.offsetTop;
-    const height = sec.offsetHeight;
+    const height = sec.offsetHeight - 150;
     const id = sec.getAttribute("id");
 
     if (top >= offset && top < offset + height) {

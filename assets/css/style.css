@@ -332,6 +332,80 @@ button:focus,
   transform: translateX(-50%);
 }
 
+.single-testimonial {
+  background: #fff;
+  padding: 1.75rem 2.25rem;
+  border-radius: 0.3125rem;
+  box-shadow: 0px 33px 251px 0px rgba(0, 0, 0, 0.09), 0px 15.257px 116.045px 0px rgba(0, 0, 0, 0.07), 0px 8.73px 66.398px 0px rgba(0, 0, 0, 0.06), 0px 5.299px 40.303px 0px rgba(0, 0, 0, 0.05), 0px 3.193px 24.284px 0px rgba(0, 0, 0, 0.04), 0px 1.778px 13.523px 0px rgba(0, 0, 0, 0.03), 0px 0.765px 5.816px 0px rgba(0, 0, 0, 0.02);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  padding-top: 50px;
+}
+@media screen and (min-width: 62rem) {
+  .single-testimonial {
+    max-width: 20.375rem;
+  }
+}
+.single-testimonial .testimonial-thumb {
+  width: 3.9375rem;
+  height: 3.9375rem;
+  display: block;
+  border-radius: 100%;
+  position: absolute;
+  top: -30px;
+}
+.single-testimonial .quote {
+  width: 3.125rem;
+  height: 3.125rem;
+  background-color: #274E75;
+  border-radius: 100%;
+  position: absolute;
+  left: -30px;
+  top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.single-testimonial .des {
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 174%; /* 24.36px */
+  letter-spacing: 0.28px;
+  text-transform: capitalize;
+}
+.single-testimonial .name {
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 174%; /* 31.32px */
+  letter-spacing: 0.36px;
+  text-transform: capitalize;
+}
+.single-testimonial .testimonial-text {
+  color: #595959;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 174%; /* 22.62px */
+  letter-spacing: 0.26px;
+  text-transform: capitalize;
+}
+
+@media screen and (min-width: 62rem) {
+  .single-testimonial:last-child {
+    position: absolute;
+    top: 50%;
+    left: 34.375rem;
+    transform: translateY(-50%);
+  }
+}
+
 .navbar {
   background: rgba(0, 0, 0, 0.3);
   color: hsl(0, 0%, 100%);
@@ -862,6 +936,27 @@ table tr td {
   }
 }
 
+.testimonial {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.86) 0%, rgba(255, 255, 255, 0.86) 100%), url(../assets/images/bathroom-image11.jpg) lightgray 50%/cover no-repeat;
+  background-size: cover;
+  padding-top: 2.375rem;
+  padding-bottom: 5.5rem;
+  padding-left: 3.125rem;
+  padding-right: 3.125rem;
+  position: relative;
+}
+@media screen and (min-width: 62rem) {
+  .testimonial {
+    padding-left: 10.625rem;
+  }
+}
+.testimonial .testimonial-wrappers {
+  display: flex;
+  flex-direction: column;
+  gap: 3.75rem;
+  align-items: flex-start;
+}
+
 .whychoose {
   padding: 3.125rem 0rem;
 }
@@ -1267,6 +1362,99 @@ table tr td {
 }
 #portfolio .wrapper .section-body figure figcaption:hover .content {
   transform: translateY(0);
+}
+
+#services {
+  background-image: url("../../assets/images/icon/Vector 1.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 30%;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-color: #fafafa;
+}
+#services .section-title {
+  color: hsl(0, 0%, 0%);
+}
+#services .section-title::after {
+  left: 0;
+  transform: translateX(0%);
+}
+#services .section-body:nth-child(1) {
+  flex-direction: row-reverse !important;
+}
+#services .section-body .second {
+  flex-direction: row-reverse !important;
+}
+#services .section-body .second > .d-flex {
+  flex-direction: row-reverse !important;
+}
+#services .section-body .second > .d-flex .step-card {
+  justify-content: end;
+  text-align: end;
+  flex-direction: row-reverse;
+}
+#services .section-body .second > .d-flex .step {
+  transform: translateX(56px);
+}
+#services .section-body .step-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-around;
+}
+@media screen and (min-width: 62rem) {
+  #services .section-body .step-wrapper {
+    flex-direction: row;
+  }
+}
+#services .section-body .step-thumb {
+  width: 400px;
+  height: 250px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+#services .section-body .step {
+  width: 40px;
+  height: 40px;
+  color: #ffbc13;
+  background-color: rgba(255, 188, 19, 0.2);
+  font-weight: bold;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+}
+#services .section-body .shadow {
+  background-color: #fff;
+  box-shadow: 0px 33px 251px 0px rgba(0, 0, 0, 0.09), 0px 15.257px 116.045px 0px rgba(0, 0, 0, 0.07), 0px 8.73px 66.398px 0px rgba(0, 0, 0, 0.06), 0px 5.299px 40.303px 0px rgba(0, 0, 0, 0.05), 0px 3.193px 24.284px 0px rgba(0, 0, 0, 0.04), 0px 1.778px 13.523px 0px rgba(0, 0, 0, 0.03), 0px 0.765px 5.816px 0px rgba(0, 0, 0, 0.02);
+}
+#services .section-body .step-card {
+  border: 8px;
+  display: flex;
+  padding: 15px;
+  gap: 30px;
+  max-width: 500px;
+}
+#services .section-body .step-card .title {
+  font-family: #ffbc13;
+  font-size: 1.75rem;
+  font-weight: 700;
+  font-style: normal;
+  line-height: calc(normal / 28);
+  margin-bottom: 1rem;
+}
+#services .section-body .step-card .des {
+  font-family: #ffbc13;
+  font-size: 1.125rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: calc(normal / 18);
+  font-size: clamp(14px, 9vw, 18px);
+  color: #777;
 }
 
 .text-primary {
