@@ -10,6 +10,7 @@
     align-items: center;
     text-align: center;
     gap: size(20);
+    padding-bottom: size(70);
     @include breakpoint(tab992) {
       flex-direction: row;
       align-items: flex-start;
@@ -20,7 +21,7 @@
     }
     .des-wrapper {
       @include flex-column;
-      gap: size(10);
+      gap: size(60);
       align-items: center;
       @include breakpoint(tab992) {
         align-items: flex-start;
@@ -53,6 +54,15 @@
     @include flex-column;
     list-style: none;
     justify-content: flex-start;
+    gap: size(80);
+    padding: 0;
+    margin: 0;
+    li {
+      @include transitionsall;
+      @include hover {
+        transform: translateX(8px);
+      }
+    }
     .left {
       position: relative;
       flex-shrink: 0;
@@ -74,7 +84,24 @@
     .right {
       color: #fff;
       @include flex-column;
-      gap: size(10);
+      gap: size(18);
+    }
+  }
+  .image-wrapper {
+    position: relative;
+    img {
+      position: absolute;
+      max-width: 100%;
+      top: 50px;
+      right: 50px;
+      display: block;
+      border-radius: 0px 100px;
+      width: 80%;
+      @include breakpoint(mobile576) {
+        border-radius: 0px 200px;
+        right: 85px;
+        top: 60px;
+      }
     }
   }
 }
@@ -259,6 +286,52 @@
     }
     .zp-btn {
       font-weight: 500;
+    }
+  }
+}
+
+// PORTFOLIO SECTION
+#portfolio {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-color: $black-800;
+  .section-title {
+    &::after {
+      left: 0% !important;
+      transform: translateX(0%) !important;
+    }
+  }
+  .wrapper {
+    .section-header {
+      @include flex-between;
+      .portfolio-swiper-next,
+      .portfolio-swiper-prev {
+        color: $primary;
+        border: 2px solid $primary;
+        // padding: 2px 5px;
+        margin: 0px 3px;
+        cursor: pointer;
+        display: inline-block;
+        border-radius: 4px;
+        transition: 0.3s;
+        font-size: 30px;
+        &:hover {
+          background-color: $primary;
+          color: white;
+        }
+      }
+    }
+    .section-body {
+      .swiper-slide figure {
+        position: relative;
+        figcaption {
+          position: absolute;
+          bottom: 0;
+          .title {
+            text-transform: uppercase;
+          }
+        }
+      }
     }
   }
 }

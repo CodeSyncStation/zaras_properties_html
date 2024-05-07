@@ -1,4 +1,4 @@
-var swiper = new Swiper(".about-slider", {
+const aboutSlider = new Swiper(".about-slider", {
   spaceBetween: 10,
   slidesPerView: 4,
   freeMode: true,
@@ -6,7 +6,7 @@ var swiper = new Swiper(".about-slider", {
   loop: true,
   autoplay: true,
 });
-var swiper2 = new Swiper(".about-slide", {
+const aboutThumb = new Swiper(".about-slide", {
   loop: true,
   autoplay: true,
   spaceBetween: 10,
@@ -15,6 +15,40 @@ var swiper2 = new Swiper(".about-slide", {
     prevEl: ".swiper-button-prev",
   },
   thumbs: {
-    swiper: swiper,
+    swiper: aboutSlider,
+  },
+});
+
+const portfolioSlider = new Swiper(".portfolio-slider", {
+  // Optional parameters
+  slidesPerView: 1,
+  spaceBetween: 10,
+  // loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    type: "bullets",
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 40,
+    },
+    // 1220: {
+    //   slidesPerView: 4,
+    //   spaceBetween: 40,
+    // },
+  },
+  // Navigation arrows
+  navigation: {
+    nextEl: ".portfolio-swiper-next",
+    prevEl: ".portfolio-swiper-prev",
   },
 });
