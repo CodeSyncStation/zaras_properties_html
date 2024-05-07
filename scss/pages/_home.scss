@@ -1,5 +1,33 @@
 @use "../global" as *;
 @use "../partials" as *;
+.whychoose {
+  padding: size(50) size(0);
+  .section-top {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 0 30px;
+    gap: 20px;
+    padding-bottom: size(50);
+    .title {
+      text-transform: uppercase;
+      position: relative;
+      margin-bottom: 30px;
+
+      &::after {
+        position: absolute;
+        content: "";
+        height: 3px;
+        width: 150px;
+        background-color: $primary;
+        bottom: size(-10);
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+}
 
 .investors {
   background-color: #1c2157;

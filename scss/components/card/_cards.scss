@@ -1,3 +1,61 @@
 @use "../../global" as *;
 @use "../../partials" as *;
 
+.whycard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: size(10);
+  padding: 0 30px;
+  @include transitionsall;
+  &:hover {
+    transform: translateY(-8px);
+  }
+  .icon-wrapper {
+    position: relative;
+    .icon {
+      border: 1px solid #e2e6e7;
+      @include square(120);
+      @include flex-center;
+      @include circle;
+      .fa {
+        font-size: 60px;
+      }
+    }
+    .line {
+      height: 50px;
+      width: 1px;
+      background-color: #e2e6e7;
+      position: absolute;
+      left: 50px;
+    }
+    .ball {
+      height: 20px;
+      width: 20px;
+      border: 1px solid #e2e6e7;
+      border-radius: 50%;
+      position: absolute;
+      left: 50px;
+      transform: translateX(-50%);
+      bottom: -70px;
+    }
+  }
+  .title {
+    margin-top: 80px;
+    font-size: 18px;
+    line-height: 28px;
+    position: relative;
+    margin-bottom: 30px;
+    &::after {
+      height: 3px;
+      width: 70px;
+      background-color: #ffbc13;
+      position: absolute;
+      bottom: -10px;
+      content: "";
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
