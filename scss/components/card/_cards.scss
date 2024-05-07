@@ -7,6 +7,11 @@
   align-items: center;
   text-align: center;
   gap: size(10);
+  padding: 0 30px;
+  @include transitionsall;
+  &:hover {
+    transform: translateY(-8px);
+  }
   .icon-wrapper {
     position: relative;
     .icon {
@@ -38,5 +43,19 @@
   }
   .title {
     margin-top: 80px;
+    font-size: 18px;
+    line-height: 28px;
+    position: relative;
+    margin-bottom: 30px;
+    &::after {
+      height: 3px;
+      width: 70px;
+      background-color: #ffbc13;
+      position: absolute;
+      bottom: -10px;
+      content: "";
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 }
