@@ -1,5 +1,27 @@
 @use "../global" as *;
 @use "../partials" as *;
+.testimonial {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.86) 0%, rgba(255, 255, 255, 0.86) 100%), url(../assets/images/bathroom-image11.jpg) lightgray 50% / cover no-repeat;
+  background-size: cover;
+ 
+  padding-top: size(38);
+  padding-bottom: size(88);
+  padding-left: size(50);
+  padding-right: size(50);
+  position: relative;
+  @include breakpoint(tab992) {
+    padding-left: size(170);
+  }
+
+  .testimonial-wrappers {
+    display: flex;
+    flex-direction: column;
+    gap: size(60);
+    align-items: flex-start;
+  }
+
+ 
+}
 .whychoose {
   padding: size(50) size(0);
   .section-top {
