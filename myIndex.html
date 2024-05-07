@@ -30,6 +30,36 @@
   </head>
 
   <body>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <button type="button" class="close-btn-modal" data-bs-dismiss="modal">
+            <i class="bi bi-x-lg fa-2x text-white"></i>
+          </button>
+
+          <div
+            class="d-flex mx-auto justify-content-center align-items-center h-100 w-50"
+          >
+            <figure>
+              <img
+                id="preview-img"
+                src="assets/images/buy-property.jpg"
+                alt=""
+              />
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- ================== HEADER PART START================== -->
     <header>
       <nav id="navbar" class="navbar navbar-expand-lg z-3 fixed-top">
@@ -256,12 +286,18 @@
           <div class="section-body">
             <div class="swiper portfolio-slider">
               <div class="swiper-wrapper">
+                <!-- slide 1 -->
                 <div class="swiper-slide">
                   <figure>
                     <img src="assets/images/bed-room-image04.jpg" alt="" />
                     <figcaption>
                       <div class="text-end">
-                        <i class="bi bi-arrows-fullscreen"></i>
+                        <button
+                          onclick="previewImage('assets/images/bed-room-image04.jpg')"
+                          class="text-white"
+                        >
+                          <i class="bi bi-arrows-fullscreen"></i>
+                        </button>
                       </div>
                       <div class="content">
                         <h2>Luxury Building</h2>
@@ -270,12 +306,18 @@
                     </figcaption>
                   </figure>
                 </div>
+                <!-- slide 2 -->
                 <div class="swiper-slide">
                   <figure>
                     <img src="assets/images/kitchen-image07.jpg" alt="" />
                     <figcaption>
                       <div class="text-end">
-                        <i class="bi bi-arrows-fullscreen"></i>
+                        <button
+                          onclick="previewImage('assets/images/kitchen-image07.jpg')"
+                          class="text-white"
+                        >
+                          <i class="bi bi-arrows-fullscreen"></i>
+                        </button>
                       </div>
                       <div class="content">
                         <h2>Luxury Building</h2>
@@ -284,12 +326,18 @@
                     </figcaption>
                   </figure>
                 </div>
+                <!-- slide 3 -->
                 <div class="swiper-slide">
                   <figure>
                     <img src="assets/images/kitchen-wide-image10.jpg" alt="" />
                     <figcaption>
                       <div class="text-end">
-                        <i class="bi bi-arrows-fullscreen"></i>
+                        <button
+                          class="text-white"
+                          onclick="previewImage('assets/images/kitchen-wide-image10.jpg')"
+                        >
+                          <i class="bi bi-arrows-fullscreen"></i>
+                        </button>
                       </div>
                       <div class="content">
                         <h2>Luxury Building</h2>
@@ -301,6 +349,20 @@
                 <div class="swiper-slide">
                   <figure>
                     <img src="assets/images/bathroom-image11.jpg" alt="" />
+                    <figcaption>
+                      <div class="text-end">
+                        <button
+                          class="text-white"
+                          onclick="previewImage('assets/images/bathroom-image11.jpg')"
+                        >
+                          <i class="bi bi-arrows-fullscreen"></i>
+                        </button>
+                      </div>
+                      <div class="content">
+                        <h2>Luxury Building</h2>
+                        <p>Construction</p>
+                      </div>
+                    </figcaption>
                   </figure>
                 </div>
               </div>
@@ -325,7 +387,10 @@
                 <img src="assets/images/buy-property.jpg" alt="" />
               </figure>
               <div class="d-flex gap-4">
-                <div class="step">1</div>
+                <div class="step">
+                  1
+                  <div class="line"></div>
+                </div>
                 <div class="step-card shadow">
                   <figure>
                     <img src="assets/images/icon/money-bag.svg" alt="" />
@@ -361,7 +426,7 @@
                 </div>
               </div>
             </div>
-           
+
             <div class="step-wrapper">
               <figure class="step-thumb">
                 <img src="assets/images/sell-property.png" alt="" />
@@ -382,7 +447,6 @@
                 </div>
               </div>
             </div>
-            
           </div>
         </div>
       </div>
@@ -390,11 +454,489 @@
 
     <!-- OUR SERVICES END HERE -->
 
+    <!-- =================== INVESTORS SECTION START =================== -->
+    <section class="investors">
+      <div class="container">
+        <div class="section-top">
+          <h1 class="title">why choose to invest Zaras properties now</h1>
+          <div class="des-wrapper">
+            <p class="des">
+              We are an experience development and construction company our
+              investors benefit from partnering with a company that delivers.
+            </p>
+            <button class="getstarted">get started</button>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <ul class="investor-points">
+              <li class="d-flex">
+                <div class="left">
+                  <svg
+                    width="30"
+                    height="30"
+                    viewBox="0 0 99 99"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g filter="url(#filter0_f_1201_189)">
+                      <circle cx="49.5" cy="49.5" r="23.5" fill="#F9A526" />
+                    </g>
+                    <defs>
+                      <filter
+                        id="filter0_f_1201_189"
+                        x="0"
+                        y="0"
+                        width="99"
+                        height="99"
+                        filterUnits="userSpaceOnUse"
+                        color-interpolation-filters="sRGB"
+                      >
+                        <feFlood
+                          flood-opacity="0"
+                          result="BackgroundImageFix"
+                        />
+                        <feBlend
+                          mode="normal"
+                          in="SourceGraphic"
+                          in2="BackgroundImageFix"
+                          result="shape"
+                        />
+                        <feGaussianBlur
+                          stdDeviation="13"
+                          result="effect1_foregroundBlur_1201_189"
+                        />
+                      </filter>
+                    </defs>
+                  </svg>
+                  <span class="number"> 01 </span>
+                </div>
+                <div class="right">
+                  <h3>Investor Benefits: Partnering</h3>
+                  <p>
+                    We are an experience development and construction company
+                    our investors benefit from partnering with a company that
+                    delivers.
+                  </p>
+                </div>
+              </li>
+              <li class="d-flex">
+                <div class="left">
+                  <svg
+                    width="87"
+                    height="87"
+                    viewBox="0 0 87 87"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g filter="url(#filter0_f_1201_197)">
+                      <circle cx="43.5" cy="43.5" r="23.5" fill="#26F93B" />
+                    </g>
+                    <defs>
+                      <filter
+                        id="filter0_f_1201_197"
+                        x="0"
+                        y="0"
+                        width="87"
+                        height="87"
+                        filterUnits="userSpaceOnUse"
+                        color-interpolation-filters="sRGB"
+                      >
+                        <feFlood
+                          flood-opacity="0"
+                          result="BackgroundImageFix"
+                        />
+                        <feBlend
+                          mode="normal"
+                          in="SourceGraphic"
+                          in2="BackgroundImageFix"
+                          result="shape"
+                        />
+                        <feGaussianBlur
+                          stdDeviation="10"
+                          result="effect1_foregroundBlur_1201_197"
+                        />
+                      </filter>
+                    </defs>
+                  </svg>
+
+                  <span class="number"> 02 </span>
+                </div>
+                <div class="right">
+                  <h3>Win-Win Solutions: Approach</h3>
+                  <p>
+                    We take our partnerships incredibly seriously and always
+                    work very hard to create win-win solutions that work for us
+                    and our investors.
+                  </p>
+                </div>
+              </li>
+              <li class="d-flex">
+                <div class="left">
+                  <svg
+                    width="87"
+                    height="87"
+                    viewBox="0 0 87 87"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g filter="url(#filter0_f_1201_203)">
+                      <circle cx="43.5" cy="43.5" r="23.5" fill="#26F9BA" />
+                    </g>
+                    <defs>
+                      <filter
+                        id="filter0_f_1201_203"
+                        x="0"
+                        y="0"
+                        width="87"
+                        height="87"
+                        filterUnits="userSpaceOnUse"
+                        color-interpolation-filters="sRGB"
+                      >
+                        <feFlood
+                          flood-opacity="0"
+                          result="BackgroundImageFix"
+                        />
+                        <feBlend
+                          mode="normal"
+                          in="SourceGraphic"
+                          in2="BackgroundImageFix"
+                          result="shape"
+                        />
+                        <feGaussianBlur
+                          stdDeviation="10"
+                          result="effect1_foregroundBlur_1201_203"
+                        />
+                      </filter>
+                    </defs>
+                  </svg>
+
+                  <span class="number"> 03 </span>
+                </div>
+                <div class="right">
+                  <h3>Options: Loans or Ventures</h3>
+                  <p>
+                    There are two ways that we can do this. The first is you
+                    lending funds for projects that we are doing with fixed
+                    interest loans and the second is as a Joint Venture partner
+                    in a property project. Before we can explore this further we
+                    need to make sure we are compliant with the Financial
+                    Conduct Authority guidelines.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <div class="image-wrapper">
+              <img src="assets/images/bathroom-image11.jpg" alt="" />
+              <svg
+                width="720"
+                height="904"
+                viewBox="0 0 720 904"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M695 0H40C17.9086 0 0 17.9086 0 40V188.758C0 210.85 17.9087 228.758 40.0001 228.758H454.33C476.421 228.758 494.33 246.667 494.33 268.758V864C494.33 886.091 512.238 904 534.33 904H695C717.091 904 735 886.091 735 864V40C735 17.9086 717.091 0 695 0Z"
+                  fill="#48CAE4"
+                  fill-opacity="0.3"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =================== INVESTORS SECTION END =================== -->
+
+    <!-- =================== TESTIMONIAL SECTION START =================== -->
+    <section id="testimonials" class="testimonial">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="testimonial-wrappers">
+            <div class="single-testimonial">
+              <img
+                src="assets/images/kitchen-mobile-image17.jpg"
+                class="testimonial-thumb"
+                alt=""
+              />
+              <div class="quote">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="10"
+                  fill="#fff"
+                  class="bi bi-quote"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"
+                  />
+                </svg>
+              </div>
+              <p class="des">client 2</p>
+              <h4 class="name">bob harleyu</h4>
+              <p class="testimonial-text">
+                Posuere aliquam sed vestibulum duis vestibulum consectetur.
+                Cursus nulla dictum lacus euismod dignissim habitant ut amet
+                commodo.
+              </p>
+            </div>
+            <div class="single-testimonial">
+              <img
+                src="assets/images/kitchen-mobile-image17.jpg"
+                class="testimonial-thumb"
+                alt=""
+              />
+              <div class="quote">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="10"
+                  fill="#fff"
+                  class="bi bi-quote"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"
+                  />
+                </svg>
+              </div>
+              <p class="des">client 2</p>
+              <h4 class="name">bob harleyu</h4>
+              <p class="testimonial-text">
+                Posuere aliquam sed vestibulum duis vestibulum consectetur.
+                Cursus nulla dictum lacus euismod dignissim habitant ut amet
+                commodo.
+              </p>
+            </div>
+            <div class="single-testimonial">
+              <img
+                src="assets/images/kitchen-mobile-image17.jpg"
+                class="testimonial-thumb"
+                alt=""
+              />
+              <div class="quote">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="10"
+                  fill="#fff"
+                  class="bi bi-quote"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"
+                  />
+                </svg>
+              </div>
+              <p class="des">client 2</p>
+              <h4 class="name">bob harleyu</h4>
+              <p class="testimonial-text">
+                Posuere aliquam sed vestibulum duis vestibulum consectetur.
+                Cursus nulla dictum lacus euismod dignissim habitant ut amet
+                commodo.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="right-wrapper">
+            <h1>what our client say</h1>
+            <p>
+              Convallis nec ac purus nunc. Maecenas pharetra scelerisque tempor
+              vulputate enim bibendum consectetur.
+            </p>
+            <a href="#">
+              see more
+              <span>
+                <svg
+                  width="32"
+                  height="23"
+                  viewBox="0 0 32 23"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M31.3536 11.3536C31.5488 11.1583 31.5488 10.8417 31.3536 10.6464L28.1716 7.46447C27.9763 7.2692 27.6597 7.2692 27.4645 7.46447C27.2692 7.65973 27.2692 7.97631 27.4645 8.17157L30.2929 11L27.4645 13.8284C27.2692 14.0237 27.2692 14.3403 27.4645 14.5355C27.6597 14.7308 27.9763 14.7308 28.1716 14.5355L31.3536 11.3536ZM9 11.5H31V10.5H9V11.5Z"
+                    fill="#0DC3FF"
+                  />
+                  <mask id="path-2-inside-1_1201_130" fill="white">
+                    <path
+                      d="M22.7655 9.18948C22.1864 6.36571 20.5679 3.86241 18.2306 2.17535C15.8933 0.488285 13.0077 -0.259504 10.1452 0.0800801C7.28275 0.419664 4.65219 1.82185 2.77451 4.00895C0.896833 6.19605 -0.091019 9.00855 0.00659587 11.8894C0.104211 14.7703 1.28017 17.5095 3.30159 19.5645C5.323 21.6195 8.04244 22.8404 10.9213 22.9854C13.8002 23.1305 16.6286 22.1891 18.8463 20.3477C21.0641 18.5063 22.5094 15.8992 22.8961 13.0427L22.2681 12.9577C21.9027 15.6567 20.537 18.1202 18.4415 19.8601C16.346 21.6001 13.6735 22.4896 10.9532 22.3525C8.23297 22.2155 5.66338 21.0618 3.75336 19.1201C1.84334 17.1784 0.732174 14.5901 0.639938 11.868C0.547703 9.14584 1.48112 6.48832 3.25533 4.42174C5.02953 2.35517 7.51514 1.03024 10.2199 0.709373C12.9246 0.388502 15.6512 1.09508 17.8597 2.68918C20.0682 4.28328 21.5975 6.64864 22.1447 9.3168L22.7655 9.18948Z"
+                    />
+                  </mask>
+                  <path
+                    d="M22.7655 9.18948C22.1864 6.36571 20.5679 3.86241 18.2306 2.17535C15.8933 0.488285 13.0077 -0.259504 10.1452 0.0800801C7.28275 0.419664 4.65219 1.82185 2.77451 4.00895C0.896833 6.19605 -0.091019 9.00855 0.00659587 11.8894C0.104211 14.7703 1.28017 17.5095 3.30159 19.5645C5.323 21.6195 8.04244 22.8404 10.9213 22.9854C13.8002 23.1305 16.6286 22.1891 18.8463 20.3477C21.0641 18.5063 22.5094 15.8992 22.8961 13.0427L22.2681 12.9577C21.9027 15.6567 20.537 18.1202 18.4415 19.8601C16.346 21.6001 13.6735 22.4896 10.9532 22.3525C8.23297 22.2155 5.66338 21.0618 3.75336 19.1201C1.84334 17.1784 0.732174 14.5901 0.639938 11.868C0.547703 9.14584 1.48112 6.48832 3.25533 4.42174C5.02953 2.35517 7.51514 1.03024 10.2199 0.709373C12.9246 0.388502 15.6512 1.09508 17.8597 2.68918C20.0682 4.28328 21.5975 6.64864 22.1447 9.3168L22.7655 9.18948Z"
+                    stroke="#0DC3FF"
+                    stroke-width="2"
+                    mask="url(#path-2-inside-1_1201_130)"
+                  />
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =================== TESTIMONIAL SECTION END =================== -->
+
+    <!-- =================== WHY CHOOSE US SECTION START =================== -->
+    <section id="whyUs" class="whychoose">
+      <div class="section-top">
+        <h1 class="title">WHY CHOOSE ZARAS PROPERTY</h1>
+        <p>
+          Founded by Kevin Smith back in 2000, Renovate has established itself
+          as one of the greatest and <br />
+          prestigious providers of construction focused interior renovation
+          services and building.
+        </p>
+      </div>
+      <div class="container">
+        <div class="row g-3">
+          <div class="col-lg-4">
+            <div class="whycard">
+              <div class="icon-wrapper">
+                <div class="icon">
+                  <i class="fa fa-users"></i>
+                </div>
+                <div class="line"></div>
+                <div class="ball"></div>
+              </div>
+              <h4 class="title">Expertise and Experience</h4>
+              <p class="text">
+                Morbi nulla tortor, dignissim est node cursus euismod est arcu.
+                Nomad at vehicula novum justo magna.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="whycard">
+              <div class="icon-wrapper">
+                <div class="icon">
+                  <i class="fa fa-handshake-o" aria-hidden="true"></i>
+                </div>
+                <div class="line"></div>
+                <div class="ball"></div>
+              </div>
+              <h4 class="title">Personalized Approach</h4>
+              <p class="text">
+                Morbi nulla tortor, dignissim est node cursus euismod est arcu.
+                Nomad at vehicula novum justo magna.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="whycard">
+              <div class="icon-wrapper">
+                <div class="icon">
+                  <i class="fa fa-cogs"></i>
+                </div>
+                <div class="line"></div>
+                <div class="ball"></div>
+              </div>
+              <h4 class="title">Comprehensive Services</h4>
+              <p class="text">
+                Morbi nulla tortor, dignissim est node cursus euismod est arcu.
+                Nomad at vehicula novum justo magna.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =================== WHY CHOOSE US SECTION END =================== -->
+
+    <!-- =================== CONTACT US START =================== -->
+    <section id="contact" class="contactus">
+      <div class="section-top">
+        <h1 class="title">Contact Us</h1>
+      </div>
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <div class="left-info">
+              <h4 class="title">CALL US</h4>
+              <p class="des">
+                Cras id justo eget sapien scelerisque lacinia non a eros. In a
+                volutpat magna. Vivamus pretium urna at condimentum porta.
+                Phasellus mollis mauris dolor, a tincidunt mauris fringilla.
+                Phasellus lobortis tortor urna, vitae venenatis dui bibendum at.
+              </p>
+              <ul class="locations">
+                <li>
+                  <div class="icon">
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                  </div>
+                  <span>
+                    1379 Shoreline Parkway, Mountain View, CA 94043, United
+                    States
+                  </span>
+                </li>
+                <li>
+                  <div class="icon">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                  </div>
+                  <span> Phone : +1 718-999-3939 </span>
+                </li>
+                <li>
+                  <div class="icon">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                  </div>
+                  <span> Email : contact@construction.com </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="contact-form">
+              <h3 class="form-title">GET IN TOUCH WITH US</h3>
+              <div class="row g-4">
+                <div class="col-lg-6">
+                  <input type="text" placeholder="Name *" />
+                </div>
+                <div class="col-lg-6">
+                  <input type="email" placeholder="E-mail*" />
+                </div>
+                <div class="col-lg-6">
+                  <input type="email" placeholder="Phone Number" />
+                </div>
+                <div class="col-lg-6">
+                  <input type="email" placeholder="Subject *" />
+                </div>
+                <div class="col-12">
+                  <textarea
+                    name=""
+                    id=""
+                    cols="30"
+                    rows="5"
+                    placeholder="Message"
+                  ></textarea>
+                </div>
+                <div class="col-12">
+                  <div class="d-flex justify-content-end w-100">
+                    <span
+                      class="conract-btn px-5 d-flex justify-content-between align-items-center gap-3"
+                    >
+                      SEND
+                      <i class="fa fa-paper-plane"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================== CONTACT US END =================== -->
+
     <!-- ================== FOOTER PART START================== -->
     <footer>
       <div class="container">
-        <div class="row">
-          <div class="col-md-4">
+        <div class="row g-4">
+          <div class="col-lg-4">
             <div class="footer-left">
               <h3 class="section-title">ABOUT US</h3>
               <img
@@ -410,11 +952,11 @@
               </p>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-lg-4">
             <div class="footer-middle">
               <h3 class="section-title">COMPANY LINKS</h3>
               <div class="links">
-                <ul class="footer-links">
+                <ul class="footer-links pe-3">
                   <li class="style-2"><a href="#">History</a></li>
                   <li class="style-2"><a href="#">Services</a></li>
                   <li class="style-2"><a href="#">Team &amp; Awards</a></li>
@@ -422,7 +964,7 @@
                   <li class="style-2"><a href="#">Community</a></li>
                   <li class="style-2"><a href="#">Safety</a></li>
                 </ul>
-                <ul class="footer-links">
+                <ul class="footer-links pe-3">
                   <li class="style-2"><a href="#">News &amp; Events</a></li>
                   <li class="style-2"><a href="#">Sustainability</a></li>
                   <li class="style-2"><a href="#">FAQ</a></li>
@@ -433,7 +975,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-lg-4">
             <div class="footer-right">
               <h3 class="section-title">CONTACT INFO</h3>
               <ul class="footer-address">
@@ -463,6 +1005,18 @@
                 <a target="_blank" href="#"><i class="fa fa-dribbble"></i></a>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="bottom-wrapper">
+            <p>CONSTRUCTION TEMPLATE © DESIGN BY BLOGWP.</p>
+            <ul class="footer-link">
+              <li><a href="">HISTORY</a></li>
+              <li><a href=""> FAQ</a></li>
+              <li><a href="">EVENTS</a></li>
+            </ul>
           </div>
         </div>
       </div>

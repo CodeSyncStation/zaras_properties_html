@@ -2,6 +2,8 @@
 const navbar = document.getElementById("navbar");
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll(".nav-link");
+const modalEl = document.querySelector(".modal");
+const bsModal = new bootstrap.Modal(modalEl);
 
 window.onload = function () {
   changeNavbarBG();
@@ -38,4 +40,10 @@ function activeNavLink() {
       });
     }
   });
+}
+
+function previewImage(imageURL) {
+  const previewImg = document.getElementById("preview-img");
+  previewImg.src = imageURL;
+  bsModal.show();
 }

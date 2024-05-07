@@ -603,6 +603,17 @@ input[type=search]::-webkit-search-results-decoration:focus {
   opacity: 1;
   transform: rotate(180deg);
 }
+.modal-content {
+  background-color: rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.close-btn-modal {
+  position: absolute;
+  top: 1rem;
+  right: 4rem;
+}
+
 .tooltip-inner {
   font-size: 0.75rem;
 }
@@ -1368,7 +1379,7 @@ table tr td {
   background-image: url("../../assets/images/icon/Vector 1.svg");
   background-repeat: no-repeat;
   background-position: top right;
-  background-size: 30%;
+  background-size: 40%;
   padding-top: 6rem;
   padding-bottom: 6rem;
   background-color: #fafafa;
@@ -1382,6 +1393,9 @@ table tr td {
 }
 #services .section-body:nth-child(1) {
   flex-direction: row-reverse !important;
+}
+#services .section-body .line {
+  border-left: 2px dashed #ffbc13;
 }
 #services .section-body .second {
   flex-direction: row-reverse !important;

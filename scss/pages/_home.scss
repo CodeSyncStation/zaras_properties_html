@@ -421,7 +421,7 @@
   background-image: url("../../assets/images/icon/Vector\ 1.svg");
   background-repeat: no-repeat;
   background-position: top right;
-  background-size: 30%;
+  background-size: 40%;
   padding-top: 6rem;
   padding-bottom: 6rem;
   background-color: #fafafa;
@@ -435,6 +435,10 @@
   .section-body {
     &:nth-child(1) {
       flex-direction: row-reverse !important;
+    }
+
+    .line {
+      border-left: 2px dashed $primary;
     }
 
     .second {
@@ -451,7 +455,6 @@
         }
       }
     }
-
     .step-wrapper {
       @include flex-center;
       flex-direction: column;

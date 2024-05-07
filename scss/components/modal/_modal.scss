@@ -1,5 +1,5 @@
-@use '../../global' as *;
-@use '../../partials' as *;
+@use "../../global" as *;
+@use "../../partials" as *;
 
 .modal {
   &-content {
@@ -41,4 +41,15 @@
       }
     }
   }
+}
+
+.modal-content {
+  background-color: $black-300;
+  overflow: hidden;
+}
+
+.close-btn-modal {
+  position: absolute;
+  top: 1rem;
+  right: 4rem;
 }
