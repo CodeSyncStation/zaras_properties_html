@@ -350,13 +350,40 @@
       }
     }
     .section-body {
-      .swiper-slide figure {
+      figure {
         position: relative;
+        img {
+          height: 19rem;
+        }
         figcaption {
           position: absolute;
           bottom: 0;
-          .title {
-            text-transform: uppercase;
+          color: $white;
+          border-bottom: 15px solid $primary;
+          width: 100%;
+          padding: 10px 20px;
+          box-sizing: border-box;
+          height: 100%;
+          background-color: $black-300;
+          @include flex-between;
+          flex-direction: column;
+          opacity: 0;
+          transition: 0.3s;
+          &:hover {
+            opacity: 1;
+          }
+
+          .content {
+            transform: translateY(3rem);
+            transition: 0.3s;
+            h2 {
+              text-transform: uppercase;
+            }
+          }
+          &:hover {
+            .content {
+              transform: translateY(0);
+            }
           }
         }
       }

@@ -1233,15 +1233,40 @@ table tr td {
   background-color: #ffbc13;
   color: white;
 }
-#portfolio .wrapper .section-body .swiper-slide figure {
+#portfolio .wrapper .section-body figure {
   position: relative;
 }
-#portfolio .wrapper .section-body .swiper-slide figure figcaption {
+#portfolio .wrapper .section-body figure img {
+  height: 19rem;
+}
+#portfolio .wrapper .section-body figure figcaption {
   position: absolute;
   bottom: 0;
+  color: hsl(0, 0%, 100%);
+  border-bottom: 15px solid #ffbc13;
+  width: 100%;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  opacity: 0;
+  transition: 0.3s;
 }
-#portfolio .wrapper .section-body .swiper-slide figure figcaption .title {
+#portfolio .wrapper .section-body figure figcaption:hover {
+  opacity: 1;
+}
+#portfolio .wrapper .section-body figure figcaption .content {
+  transform: translateY(3rem);
+  transition: 0.3s;
+}
+#portfolio .wrapper .section-body figure figcaption .content h2 {
   text-transform: uppercase;
+}
+#portfolio .wrapper .section-body figure figcaption:hover .content {
+  transform: translateY(0);
 }
 
 .text-primary {
