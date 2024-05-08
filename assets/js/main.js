@@ -18,7 +18,7 @@ function changeNavbarBG() {
   if (scrollYPos > 200) {
     navbar.style.backgroundColor = `rgba(0,0,0, 0.8)`;
   } else {
-    navbar.style.backgroundColor = `rgba(0,0,0, 0.3)`;
+    navbar.style.backgroundColor = `rgba(0,0,0, 0)`;
   }
 }
 
