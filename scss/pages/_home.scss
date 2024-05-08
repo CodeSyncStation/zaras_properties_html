@@ -291,7 +291,7 @@
     font-size: clamp(16px, 8vw, 58px);
   }
   .des {
-    @include font($secondaryFont, 58, normal, normal, normal);
+    @include font($secondaryFont, 58, normal, normal, 80);
     color: $white;
     font-size: clamp(10px, 4vw, 20px);
     margin: 20px 0;
@@ -358,7 +358,7 @@
 
     .section-title {
       color: $black;
-      @include font($primary, 36, semibold, normal, normal);
+      @include font($primaryFont, 36, semibold, normal, normal);
       &::after {
         left: 0 !important;
         transform: translateX(0) !important;
@@ -381,7 +381,7 @@
   padding-bottom: 6rem;
   background-color: $black-800;
   .section-title {
-    @include font($primary, 36, semibold, normal, normal);
+    @include font($primaryFont, 36, semibold, normal, normal);
     &::after {
       left: 0% !important;
       transform: translateX(0%) !important;
@@ -461,7 +461,7 @@
   background-color: #fafafa;
   .section-title {
     color: $black;
-    @include font($primary, 36, semibold, normal, normal);
+    @include font($primaryFont, 36, semibold, normal, normal);
     margin-bottom: 3rem;
     &::after {
       left: 0;
@@ -589,12 +589,12 @@
       max-width: 500px;
 
       .title {
-        @include font($primary, 28, bold, normal, normal);
+        @include font($primaryFont, 28, bold, normal, 58);
         font-size: clamp(20px, 5vw, 28px);
         margin-bottom: 1rem;
       }
       .des {
-        @include font($primary, 18, normal, normal, normal);
+        @include font($primaryFont, 18, normal, normal, normal);
         font-size: clamp(10px, 5vw, 18px);
         color: $text-secondary;
       }
