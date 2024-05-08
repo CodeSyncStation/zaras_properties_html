@@ -367,10 +367,11 @@
     .des {
       @include font($secondaryFont, 18, normal, normal, 32);
       color: $text-secondary;
-      padding: 10px 0;
+      padding-bottom: 6px;
     }
     .zp-btn {
       font-weight: 500;
+      margin-top: 1rem;
     }
   }
 }
@@ -472,6 +473,9 @@
     .container {
       max-width: 1400px !important;
       padding: 0;
+      .section-title {
+        margin-left: 3rem;
+      }
     }
   }
 
@@ -523,7 +527,7 @@
     .step {
       @include breakpoint(desktop1200) {
         position: absolute;
-        top: 9%;
+        top: 8%;
         left: 50%;
       }
       @media only screen and (min-width: 1200px) and (max-width: 1280px) {
@@ -606,6 +610,10 @@
       padding: 15px;
       gap: 30px;
       max-width: 500px;
+      figure {
+        flex-basis: 100px;
+        margin-top: 1rem;
+      }
 
       .title {
         @include font($primaryFont, 28, bold, normal, 58);
@@ -613,8 +621,8 @@
         margin-bottom: 1rem;
       }
       .des {
-        @include font($primaryFont, 18, normal, normal, normal);
-        font-size: clamp(10px, 5vw, 18px);
+        @include font($primaryFont, 14, normal, normal, normal);
+        // font-size: clamp(10px, 5vw, 18px);
         color: $text-secondary;
       }
     }
