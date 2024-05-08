@@ -9,8 +9,8 @@
     url(../assets/images/bathroom-image11.jpg) lightgray 50% / cover no-repeat;
   background-size: cover;
 
-  padding-top: size(38);
-  padding-bottom: size(88);
+  padding-top: 6rem;
+  padding-bottom: 6rem;
   padding-left: size(50);
   padding-right: size(50);
   position: relative;
@@ -57,7 +57,7 @@
   }
 }
 .whychoose {
-  padding: size(50) size(0);
+  padding: 6rem size(0);
   .section-top {
     display: flex;
     flex-direction: column;
@@ -87,7 +87,7 @@
 
 .investors {
   background-color: #1c2157;
-  padding: size(80) size(0);
+  padding: 6rem size(0);
   .section-top {
     display: flex;
     flex-direction: column;
@@ -190,7 +190,8 @@
   }
 }
 .contactus {
-  padding: size(50) size(0);
+  padding-top: 6rem;
+  padding-bottom: 6rem;
   .section-top {
     @include flex-column;
     align-items: center;
