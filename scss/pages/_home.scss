@@ -407,6 +407,15 @@
           color: white;
         }
       }
+      .swiper-button-disabled {
+        color: rgb(119, 119, 119);
+        border: 2px solid rgb(119, 119, 119);
+        &:hover {
+          color: rgb(119, 119, 119) !important;
+          border: 2px solid rgb(119, 119, 119) !important;
+          background-color: transparent !important;
+        }
+      }
     }
     .section-body {
       figure {
