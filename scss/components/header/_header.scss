@@ -3,9 +3,13 @@
 
 .navbar {
   @include setBgColor($black-300, $white);
-  // height: size(50);
   .logo {
-    flex: 1;
+    width: 30%;
+  }
+  @include breakpoint(desktop1200) {
+    .logo {
+      flex: 1;
+    }
   }
   .offcanvas {
     min-height: 0;
