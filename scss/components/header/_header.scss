@@ -4,10 +4,15 @@
 .navbar {
   .logo {
     width: 30%;
+    color: white;
+    @include font($primaryFont, 18, semibold, normal, normal);
+    @include flex;
+    gap: 8px;
   }
   @include breakpoint(desktop1200) {
     .logo {
       flex: 1;
+      @include font($primaryFont, 25, semibold, normal, normal);
     }
   }
   .offcanvas {
