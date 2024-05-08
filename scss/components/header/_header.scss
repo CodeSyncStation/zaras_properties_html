@@ -2,7 +2,6 @@
 @use "../../partials" as *;
 
 .navbar {
-  @include setBgColor($black-300, $white);
   .logo {
     width: 30%;
   }

@@ -534,9 +534,9 @@
       z-index: 1;
       @include flex-column;
       justify-content: space-between;
-      height: 28.5rem;
+      height: 32.5rem;
       @include breakpoint(mobile768) {
-        height: 25rem;
+        height: 30rem;
       }
       @include breakpoint(desktop1200) {
         height: 34rem;
@@ -555,12 +555,12 @@
           content: "";
           display: inline-block;
           width: 3px;
-          height: 9rem;
+          height: 10rem;
           position: absolute;
           left: 50%;
           transform: translateX(-50%);
           @include breakpoint(mobile768) {
-            height: 7.5rem !important;
+            height: 9.5rem !important;
           }
           @include breakpoint(desktop1200) {
             height: 11.5rem !important;
@@ -614,6 +614,7 @@
       .title {
         @include font($primaryFont, 28, bold, normal, 58);
         font-size: clamp(20px, 5vw, 28px);
+        line-height: normal;
         margin-bottom: 1rem;
       }
       .des {
