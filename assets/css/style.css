@@ -400,8 +400,8 @@ button:focus,
 @media screen and (min-width: 62rem) {
   .single-testimonial:last-child {
     position: absolute;
-    top: 50%;
-    left: 34.375rem;
+    top: 70%;
+    left: 30rem;
     transform: translateY(-50%);
   }
 }
@@ -958,7 +958,7 @@ table tr td {
 }
 @media screen and (min-width: 62rem) {
   .testimonial {
-    padding-left: 10.625rem;
+    padding-left: 4.375rem;
   }
 }
 .testimonial .testimonial-wrappers {
@@ -966,6 +966,41 @@ table tr td {
   flex-direction: column;
   gap: 3.75rem;
   align-items: flex-start;
+}
+.testimonial .right-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-bottom: 5rem;
+}
+@media screen and (min-width: 62rem) {
+  .testimonial .right-wrapper {
+    margin-bottom: 0rem;
+  }
+}
+.testimonial .right-wrapper h1 {
+  color: #343434;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: 1.14px;
+  text-transform: capitalize;
+}
+@media screen and (min-width: 36rem) {
+  .testimonial .right-wrapper h1 {
+    font-size: 57px;
+    line-height: 120%;
+  }
+}
+.testimonial .right-wrapper p {
+  color: #595959;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 174%; /* 31.32px */
+  letter-spacing: 0.36px;
+  text-transform: capitalize;
 }
 
 .whychoose {
@@ -1291,7 +1326,11 @@ table tr td {
 }
 #about .wrapper .section-title {
   color: hsl(0, 0%, 0%);
-  font-size: 1.758em;
+  font-family: #ffbc13;
+  font-size: 2.25rem;
+  font-weight: 600;
+  font-style: normal;
+  line-height: calc(normal / 36);
 }
 #about .wrapper .section-title::after {
   left: 0 !important;
@@ -1314,6 +1353,14 @@ table tr td {
   padding-top: 6rem;
   padding-bottom: 6rem;
   background-color: rgba(0, 0, 0, 0.8);
+}
+#portfolio .section-title {
+  font-family: #ffbc13;
+  font-size: 2.25rem;
+  font-weight: 600;
+  font-style: normal;
+  line-height: calc(normal / 36);
+  margin-bottom: 3rem;
 }
 #portfolio .section-title::after {
   left: 0% !important;
@@ -1379,17 +1426,26 @@ table tr td {
   background-image: url("../../assets/images/icon/Vector 1.svg");
   background-repeat: no-repeat;
   background-position: top right;
-  background-size: 40%;
+  background-size: 55%;
   padding-top: 6rem;
   padding-bottom: 6rem;
   background-color: #fafafa;
 }
 #services .section-title {
   color: hsl(0, 0%, 0%);
+  font-family: #ffbc13;
+  font-size: 2.25rem;
+  font-weight: 600;
+  font-style: normal;
+  line-height: calc(normal / 36);
+  margin-bottom: 3rem;
 }
 #services .section-title::after {
   left: 0;
   transform: translateX(0%);
+}
+#services .section-body {
+  position: relative;
 }
 #services .section-body:nth-child(1) {
   flex-direction: row-reverse !important;
@@ -1407,9 +1463,6 @@ table tr td {
   justify-content: end;
   text-align: end;
   flex-direction: row-reverse;
-}
-#services .section-body .second > .d-flex .step {
-  transform: translateX(56px);
 }
 #services .section-body .step-wrapper {
   display: flex;
@@ -1431,9 +1484,34 @@ table tr td {
   overflow: hidden;
 }
 #services .section-body .step {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 28.5rem;
+}
+@media screen and (min-width: 75rem) {
+  #services .section-body .step {
+    position: absolute;
+    top: 9%;
+    left: 50%;
+  }
+}
+@media screen and (min-width: 48rem) {
+  #services .section-body .step {
+    height: 25rem;
+  }
+}
+@media screen and (min-width: 75rem) {
+  #services .section-body .step {
+    height: 34rem;
+  }
+}
+#services .section-body .step .step-count {
   width: 40px;
   height: 40px;
   color: #ffbc13;
+  display: block;
   background-color: rgba(255, 188, 19, 0.2);
   font-weight: bold;
   font-size: 20px;
@@ -1441,6 +1519,51 @@ table tr td {
   align-items: center;
   justify-content: center;
   border-radius: 100%;
+}
+#services .section-body .step .step-count::after {
+  content: "";
+  display: inline-block;
+  width: 3px;
+  height: 9rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media screen and (min-width: 48rem) {
+  #services .section-body .step .step-count::after {
+    height: 7.5rem !important;
+  }
+}
+@media screen and (min-width: 75rem) {
+  #services .section-body .step .step-count::after {
+    height: 11.5rem !important;
+  }
+}
+#services .section-body .step .step-count:first-child::after {
+  border-left: 3px dashed #ffbc13;
+  top: 12%;
+}
+@media screen and (min-width: 62rem) {
+  #services .section-body .step .step-count:first-child::after {
+    top: 10%;
+  }
+}
+#services .section-body .step .step-count:last-child {
+  background-color: rgba(85, 212, 253, 0.2);
+  color: #55d4fd;
+}
+#services .section-body .step .step-count:last-child::after {
+  bottom: 12%;
+  border-left: 3px dashed #2cf940;
+}
+@media screen and (min-width: 62rem) {
+  #services .section-body .step .step-count:last-child::after {
+    bottom: 10%;
+  }
+}
+#services .section-body .step .step-count:nth-child(2) {
+  background-color: rgba(44, 249, 64, 0.2);
+  color: #2cf940;
 }
 #services .section-body .shadow {
   background-color: #fff;
@@ -1459,6 +1582,7 @@ table tr td {
   font-weight: 700;
   font-style: normal;
   line-height: calc(normal / 28);
+  font-size: clamp(20px, 5vw, 28px);
   margin-bottom: 1rem;
 }
 #services .section-body .step-card .des {
@@ -1467,7 +1591,7 @@ table tr td {
   font-weight: 400;
   font-style: normal;
   line-height: calc(normal / 18);
-  font-size: clamp(14px, 9vw, 18px);
+  font-size: clamp(10px, 5vw, 18px);
   color: #777;
 }
 

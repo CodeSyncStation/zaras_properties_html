@@ -1,9 +1,14 @@
 @use "../global" as *;
 @use "../partials" as *;
 .testimonial {
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.86) 0%, rgba(255, 255, 255, 0.86) 100%), url(../assets/images/bathroom-image11.jpg) lightgray 50% / cover no-repeat;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.86) 0%,
+      rgba(255, 255, 255, 0.86) 100%
+    ),
+    url(../assets/images/bathroom-image11.jpg) lightgray 50% / cover no-repeat;
   background-size: cover;
- 
+
   padding-top: size(38);
   padding-bottom: size(88);
   padding-left: size(50);
@@ -19,7 +24,7 @@
     gap: size(60);
     align-items: flex-start;
   }
- 
+
   .right-wrapper {
     @include flex-column;
     gap: size(20);
@@ -32,13 +37,12 @@
       font-size: 30px;
       font-style: normal;
       font-weight: 600;
-      line-height: 120%; 
+      line-height: 120%;
       letter-spacing: 1.14px;
       text-transform: capitalize;
       @include breakpoint(mobile576) {
         font-size: 57px;
-        line-height: 120%; 
-        
+        line-height: 120%;
       }
     }
     p {
@@ -51,7 +55,6 @@
       text-transform: capitalize;
     }
   }
- 
 }
 .whychoose {
   padding: size(50) size(0);
@@ -354,7 +357,7 @@
 
     .section-title {
       color: $black;
-      font-size: 1.758em;
+      @include font($primary, 36, semibold, normal, normal);
       &::after {
         left: 0 !important;
         transform: translateX(0) !important;
@@ -377,10 +380,12 @@
   padding-bottom: 6rem;
   background-color: $black-800;
   .section-title {
+    @include font($primary, 36, semibold, normal, normal);
     &::after {
       left: 0% !important;
       transform: translateX(0%) !important;
     }
+    margin-bottom: 3rem;
   }
   .wrapper {
     .section-header {
@@ -449,18 +454,21 @@
   background-image: url("../../assets/images/icon/Vector\ 1.svg");
   background-repeat: no-repeat;
   background-position: top right;
-  background-size: 40%;
+  background-size: 55%;
   padding-top: 6rem;
   padding-bottom: 6rem;
   background-color: #fafafa;
   .section-title {
     color: $black;
+    @include font($primary, 36, semibold, normal, normal);
+    margin-bottom: 3rem;
     &::after {
       left: 0;
       transform: translateX(0%);
     }
   }
   .section-body {
+    position: relative;
     &:nth-child(1) {
       flex-direction: row-reverse !important;
     }
@@ -477,9 +485,6 @@
           justify-content: end;
           text-align: end;
           flex-direction: row-reverse;
-        }
-        .step {
-          transform: translateX(56px);
         }
       }
     }
@@ -500,14 +505,70 @@
       overflow: hidden;
     }
     .step {
-      width: 40px;
-      height: 40px;
-      color: $primary;
-      background-color: rgba($primary, 0.2);
-      font-weight: bold;
-      font-size: 20px;
-      @include flex-center;
-      @include circle;
+      @include breakpoint(desktop1200) {
+        position: absolute;
+        top: 9%;
+        left: 50%;
+      }
+      // border: 2px solid black;
+      z-index: 1;
+      @include flex-column;
+      justify-content: space-between;
+      height: 28.5rem;
+      @include breakpoint(mobile768) {
+        height: 25rem;
+      }
+      @include breakpoint(desktop1200) {
+        height: 34rem;
+      }
+      .step-count {
+        width: 40px;
+        height: 40px;
+        color: $primary;
+        display: block;
+        background-color: rgba($primary, 0.2);
+        font-weight: bold;
+        font-size: 20px;
+        @include flex-center;
+        @include circle;
+        &::after {
+          content: "";
+          display: inline-block;
+          width: 3px;
+          height: 9rem;
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          @include breakpoint(mobile768) {
+            height: 7.5rem !important;
+          }
+          @include breakpoint(desktop1200) {
+            height: 11.5rem !important;
+          }
+        }
+        &:first-child::after {
+          border-left: 3px dashed $primary;
+          top: 12%;
+          @include breakpoint(tab992) {
+            top: 10%;
+          }
+        }
+        &:last-child {
+          background-color: rgba(#55d4fd, 0.2);
+          color: #55d4fd;
+          &::after {
+            bottom: 12%;
+            @include breakpoint(tab992) {
+              bottom: 10%;
+            }
+            border-left: 3px dashed #2cf940;
+          }
+        }
+        &:nth-child(2) {
+          background-color: rgba(#2cf940, 0.2);
+          color: #2cf940;
+        }
+      }
     }
     .shadow {
       background-color: #fff;
@@ -528,11 +589,12 @@
 
       .title {
         @include font($primary, 28, bold, normal, normal);
+        font-size: clamp(20px, 5vw, 28px);
         margin-bottom: 1rem;
       }
       .des {
         @include font($primary, 18, normal, normal, normal);
-        font-size: clamp(14px, 9vw, 18px);
+        font-size: clamp(10px, 5vw, 18px);
         color: $text-secondary;
       }
     }
