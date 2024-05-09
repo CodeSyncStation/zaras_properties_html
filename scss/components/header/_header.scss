@@ -9,6 +9,11 @@
     @include flex;
     gap: 8px;
   }
+  .zp-btn {
+    @include breakpoint(phone500) {
+      padding: 8px 10px !important;
+    }
+  }
   @include breakpoint(desktop1200) {
     .logo {
       flex: 1;

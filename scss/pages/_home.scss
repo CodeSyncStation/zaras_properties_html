@@ -288,7 +288,7 @@
   .main_title {
     @include font($primaryFont, 58, semibold, normal, 68);
     color: $white;
-    font-size: clamp(16px, 8vw, 58px);
+    font-size: clamp(16px, 7vw, 58px);
   }
   .des {
     @include font($secondaryFont, 58, normal, normal, 80);
@@ -613,7 +613,10 @@
 
       .title {
         @include font($primaryFont, 28, bold, normal, 58);
-        font-size: clamp(20px, 5vw, 28px);
+        font-size: clamp(15px, 3vw, 28px);
+        @include breakpoint(mobile576) {
+          font-size: clamp(20px, 5vw, 28px);
+        }
         line-height: normal;
         margin-bottom: 1rem;
       }
