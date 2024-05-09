@@ -3,7 +3,7 @@
 
 .navbar {
   .logo {
-    width: 30%;
+    // width: 30%;
     color: white;
     @include font($primaryFont, 18, semibold, normal, normal);
     @include flex;
