@@ -56,6 +56,9 @@ button,
     @include setBgColor(transparent, $primary);
   }
 }
+.navbar-toggler {
+  width: 30px;
+}
 
 // .btn-submit {
 //   background: $blue-green-500;
