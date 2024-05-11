@@ -5,6 +5,26 @@ const navLinks = document.querySelectorAll(".nav-link");
 const modalEl = document.querySelector(".modal");
 const bsModal = new bootstrap.Modal(modalEl);
 
+window.addEventListener("load", () => {
+  const scroll = new LocomotiveScroll({
+    el: document.querySelector("[data-scroll-container]"),
+    smooth: true,
+    multiplier: 0.75,
+    scrollFromAnywhere: true,
+  });
+  scroll.on('scroll', (instance) => {
+ if (instance.scroll.y > 200) {
+  navbar.style.backgroundColor = `rgba(0,0,0, 0.8)`;
+ } else {
+  navbar.style.backgroundColor = `rgba(0,0,0, 0)`;
+ }
+});
+});
+
+setTimeout(() => {
+  scroll.update();
+}, 5000);
+
 window.onload = function () {
   changeNavbarBG();
   activeNavLink();
