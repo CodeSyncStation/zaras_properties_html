@@ -129,7 +129,7 @@
 .single-testimonial:last-child {
   @include breakpoint(tab992) {
     position: absolute;
-    top: 71%;
+    top: 54%;
     left: 31rem;
     transform: translateY(-50%);
   }

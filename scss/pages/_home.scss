@@ -342,9 +342,13 @@
   height: 100%;
   object-fit: cover;
 }
+.heroSlider {
+  height: auto !important;
+}
 #about {
   padding-top: 6rem;
   padding-bottom: 6rem;
+
   .wrapper {
     display: flex;
     flex-direction: column-reverse;
