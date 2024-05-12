@@ -274,61 +274,91 @@
   }
 }
 // HERO SECTION STYLES
-.hero-slide-prev,
-.hero-slide-next {
-  background-color: rgba(0, 0, 0, 0.6);
-  width: 40px;
-  aspect-ratio: 1.5/1;
-  color: white;
-  position: absolute;
-  z-index: 3;
-  top: 50%;
-  // left: 0;
-  transform: translateY(-50%);
-  @include flex-center;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-.hero-slide-next {
-  right: 0 !important;
-}
-.heroSlider:hover .hero-slide-prev,
-.heroSlider:hover .hero-slide-next {
-  opacity: 1;
-}
+// .hero-slide-prev,
+// .hero-slide-next {
+//   background-color: rgba(0, 0, 0, 0.6);
+//   width: 40px;
+//   aspect-ratio: 1.5/1;
+//   color: white;
+//   position: absolute;
+//   z-index: 3;
+//   top: 50%;
+//   // left: 0;
+//   transform: translateY(-50%);
+//   @include flex-center;
+//   opacity: 0;
+//   transition: opacity 0.3s;
+// }
+// .hero-slide-next {
+//   right: 0 !important;
+// }
+// .heroSlider:hover .hero-slide-prev,
+// .heroSlider:hover .hero-slide-next {
+//   opacity: 1;
+// }
+// #hero {
+//   height: 100vh;
+//   cursor: default;
+//   .hero-image {
+//     height: 100svh;
+//   }
+//   .content {
+//     background-color: $black-500;
+//     position: absolute;
+//     top: 0;
+//     width: 100%;
+//     height: 100%;
+//     display: flex;
+//     align-items: center;
+
+//     .container {
+//       .main_title {
+//         @include font($primaryFont, 58, semibold, normal, 68);
+//         color: $white;
+//         font-size: clamp(16px, 7vw, 58px);
+//       }
+//       .des {
+//         @include font($secondaryFont, 58, normal, normal, 80);
+//         color: $white;
+//         font-size: clamp(10px, 4vw, 20px);
+//         margin: 20px 0;
+//       }
+
+//       @include breakpoint(576) {
+//         .des {
+//           margin: 80px 0;
+//         }
+//       }
+//     }
+//   }
+// }
+
 #hero {
-  height: 100vh;
-  cursor: default;
-  .hero-image {
-    height: 100svh;
+  background-image: url("../../assets/images/bed-room-image04.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100svh;
+  background-color: $black-500;
+  background-blend-mode: overlay;
+  // filter: blur(3px);
+  // -webkit-filter: blur(3px);
+  @include flex-center-vert;
+  .main_title {
+    @include font($primaryFont, 58, semibold, normal, 68);
+    color: $white;
+    font-size: clamp(16px, 7vw, 58px);
   }
-  .content {
-    background-color: $black-500;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
+  .des {
+    @include font($secondaryFont, 58, normal, normal, 80);
+    color: $white;
+    font-size: clamp(10px, 4vw, 20px);
+    margin: 20px 0;
+  }
 
-    .container {
-      .main_title {
-        @include font($primaryFont, 58, semibold, normal, 68);
-        color: $white;
-        font-size: clamp(16px, 7vw, 58px);
-      }
-      .des {
-        @include font($secondaryFont, 58, normal, normal, 80);
-        color: $white;
-        font-size: clamp(10px, 4vw, 20px);
-        margin: 20px 0;
-      }
-
-      @include breakpoint(576) {
-        .des {
-          margin: 80px 0;
-        }
-      }
+  @include breakpoint(576) {
+    .des {
+      margin: 80px 0;
     }
   }
 }
