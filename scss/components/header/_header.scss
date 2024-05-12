@@ -1,0 +1,70 @@
+@use "../../global" as *;
+@use "../../partials" as *;
+
+.navbar {
+  .logo {
+    width: 60px;
+    height: 60px;
+    color: white;
+    @include font($primaryFont, 18, semibold, normal, normal);
+    @include flex;
+    gap: 8px;
+    & > img {
+      object-fit: contain;
+    }
+  }
+  .zp-btn {
+    @include breakpoint(phone500) {
+      padding: 8px 10px !important;
+    }
+  }
+  @include breakpoint(desktop1200) {
+    .logo {
+      flex: 1;
+      @include font($primaryFont, 25, semibold, normal, normal);
+    }
+  }
+  .offcanvas {
+    min-height: 0;
+    background-color: $black-800;
+    width: min(70vw, 400px);
+
+    .nav-link {
+      color: $white;
+      transition: 0.3s;
+      margin: 0px 10px;
+      padding: 5px 0;
+      position: relative;
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 0%;
+        height: 2px;
+        background-color: $primary;
+        transition: 0.3s;
+      }
+      &:hover::after {
+        width: 100%;
+      }
+      &:hover {
+        color: $primary;
+        font-weight: 500;
+      }
+    }
+  }
+  .contact {
+    color: $primary;
+  }
+}
+
+.active_nav_link {
+  color: $primary !important;
+  font-weight: 500;
+  position: relative;
+  &::after {
+    width: 100% !important;
+    height: 2px;
+    background-color: $primary;
+  }
+}
