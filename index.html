@@ -1,138 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Zaras properties we take pride in all our projects . We are a forward-thinking property development company that embraces future home standards. We oversee the full property development cycle, We acquire, design and repurpose shabby commercial properties into modern rental homes for next generations.
+      Zaras properties have  a proven track record of success across many projects, ranging from Service accommodation,Buy to let,conversions to large developments that involve the creation of multiple units."
+    />
+    <meta
+      name="keywords"
+      content="zaras properties, zaras properties portfolio, portfolio website, real estate, property for sale, homes for sale, apartments for rent, commercial real estate, real estate agent, property investment, house listings, rental properties, land for sale, residential real estate, realtor, property management, condos for sale, investment properties, real estate market, home buying tips, property valuation, open houses, luxury real estate"
+    />
+    <meta name="author" content="Zaras Properties" />
+    <meta name="robots" content="index, follow" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-    content="Zaras properties we take pride in all our projects . We are a forward-thinking property development company that embraces future home standards. We oversee the full property development cycle, We acquire, design and repurpose shabby commercial properties into modern rental homes for next generations.
-      Zaras properties have  a proven track record of success across many projects, ranging from Service accommodation,Buy to let,conversions to large developments that involve the creation of multiple units." />
-  <meta name="keywords"
-    content="zaras properties, zaras properties portfolio, portfolio website, real estate, property for sale, homes for sale, apartments for rent, commercial real estate, real estate agent, property investment, house listings, rental properties, land for sale, residential real estate, realtor, property management, condos for sale, investment properties, real estate market, home buying tips, property valuation, open houses, luxury real estate" />
-  <meta name="author" content="Zaras Properties" />
-  <meta name="robots" content="index, follow" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Zaras Properties</title>
 
-  <title>Zaras Properties </title>
+    <!-- FAVICON  -->
+    <link
+      rel="shortcut icon"
+      href="assets/images/icon/favicon.ico"
+      type="image/x-icon"
+    />
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css" />
+    <!--  SWIPER CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- FONTAWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- AOS ANIMATION CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <style>
+      html.body {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
 
-  <!-- FAVICON  -->
-  <link rel="shortcut icon" href="assets/images/icon/favicon.ico" type="image/x-icon" />
-  <!-- BOOTSTRAP -->
-  <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css" />
-  <!--  SWIPER CDN -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <!-- FONTAWESOME -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- AOS ANIMATION CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
-  <!-- MAIN CSS -->
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <style>
-    html.body {
-      scroll-behavior: smooth;
-    }
-  </style>
-</head>
-
-<body>
-  <!-- Modal -->
-  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-    aria-hidden="true">
-    <div class="modal-dialog modal-fullscreen">
-      <div class="modal-content">
-        <button type="button" class="close-btn-modal" data-bs-dismiss="modal">
-          <i class="bi bi-x-lg fa-2x text-white"></i>
-        </button>
-        <div class="d-flex mx-auto justify-content-center align-items-center h-100 w-50">
-          <figure>
-            <img id="preview-img" src="assets/images/buy-property.jpg" alt="" />
-          </figure>
+  <body>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <button type="button" class="close-btn-modal" data-bs-dismiss="modal">
+            <i class="bi bi-x-lg fa-2x text-white"></i>
+          </button>
+          <div
+            class="d-flex mx-auto justify-content-center align-items-center h-100 w-50"
+          >
+            <figure>
+              <img
+                id="preview-img"
+                src="assets/images/buy-property.jpg"
+                alt=""
+              />
+            </figure>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- ================== HEADER PART START================== -->
-  <header>
-    <nav id="navbar" class="navbar navbar-expand-xl p-0 py-lg-1 z-3 fixed-top">
-      <div class="container">
-        <a class="logo" href="#hero">
-          <img src="assets/images/zaras_construction_logo.png" alt="Zaras Properties" />
-          <!-- <span class="text-primary">Zaras</span> Properties -->
-        </a>
-
-        <div class="d-flex d-xl-none justify-content-center align-items-center gap-3">
-          <a href="tel:+447738940597" class="zp-btn" data-bs-toggle="tooltip" data-bs-placement="bottom"
-            data-bs-title="Click to call">
-            <i class="fa-solid fa-phone"></i>
-            +447738940597
+    <!-- ================== HEADER PART START================== -->
+    <header>
+      <nav
+        id="navbar"
+        class="navbar navbar-expand-xl p-0 py-lg-1 z-3 fixed-top"
+      >
+        <div class="container">
+          <a class="logo" href="#hero">
+            <img
+              src="assets/images/zaras_construction_logo.png"
+              alt="Zaras Properties"
+            />
+            <!-- <span class="text-primary">Zaras</span> Properties -->
           </a>
-        </div>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-          <i class="bi bi-list text-white"></i>
-        </button>
-
-        <div class="offcanvas flex-1 offcanvas-end" tabindex="-1" id="offcanvasNavbar">
-          <div class="offcanvas-header">
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
-              <i class="bi bi-x-lg text-white"></i>
-            </button>
+          <div
+            class="d-flex d-xl-none justify-content-center align-items-center gap-3"
+          >
+            <a
+              href="tel:+447738940597"
+              class="zp-btn"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              data-bs-title="Click to call"
+            >
+              <i class="fa-solid fa-phone"></i>
+              +447738940597
+            </a>
           </div>
 
-          <div class="offcanvas-body bg-transparent">
-            <div class="d-flex justify-content-between w-100">
-              <ul class="navbar-nav mx-auto mb-2 mt-lg-2">
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#hero">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#about">About us</a>
-                </li>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <i class="bi bi-list text-white"></i>
+          </button>
 
-                <li class="nav-item">
-                  <a class="nav-link" href="#portfolio">Portfolio</a>
-                </li>
+          <div
+            class="offcanvas flex-1 offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+          >
+            <div class="offcanvas-header">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              >
+                <i class="bi bi-x-lg text-white"></i>
+              </button>
+            </div>
 
-                <li class="nav-item">
-                  <a class="nav-link" href="#services">Services</a>
-                </li>
+            <div class="offcanvas-body bg-transparent">
+              <div class="d-flex justify-content-between w-100">
+                <ul class="navbar-nav mx-auto mb-2 mt-lg-2">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#hero"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about">About us</a>
+                  </li>
 
-                <li class="nav-item">
-                  <a class="nav-link" href="#inverstor">Investor</a>
-                </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                  </li>
 
-                <li class="nav-item">
-                  <a class="nav-link" href="#testimonials">Testimonials</a>
-                </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                  </li>
 
-                <li class="nav-item">
-                  <a class="nav-link" href="#whyUs">Why Us</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#contact">Contact</a>
-                </li>
-              </ul>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#inverstor">Investor</a>
+                  </li>
 
-              <div class="d-xl-flex d-none justify-content-center align-items-center gap-3">
-                <a href="+447738940597" class="text-primary fw-bold" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                  data-bs-title="Click to call">
-                  <i class="fa-solid fa-phone"></i>
-                  +447738940597
-                </a>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#testimonials">Testimonials</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="#whyUs">Why Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                  </li>
+                </ul>
+
+                <div
+                  class="d-xl-flex d-none justify-content-center align-items-center gap-3"
+                >
+                  <a
+                    href="+447738940597"
+                    class="text-primary fw-bold"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="bottom"
+                    data-bs-title="Click to call"
+                  >
+                    <i class="fa-solid fa-phone"></i>
+                    +447738940597
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </nav>
-  </header>
-  <!-- =================== HEADER PART END=================== -->
+      </nav>
+    </header>
+    <!-- =================== HEADER PART END=================== -->
 
-  <!-- HERO SECTION START HERE -->
-  <!-- <div class="swiper heroSlider">
+    <!-- HERO SECTION START HERE -->
+    <!-- <div class="swiper heroSlider">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
         <section id="hero">
@@ -191,415 +257,481 @@
     </div>
   </div> -->
 
-  <section id="hero">
-    <div class="container">
-      <div class="wrapper" data-aos="fade-up" data-aos-duration="500">
-        <h2 class="main_title">
-          Quality Homes for Future <br />
-          <span class="text-primary typewrite" data-period="2000"
-            data-type='[ "Generations.", "Generations.", "Generations." ]'> <span class="wrap"></span>Generations.</span>
-        </h2>
-        <p class="des lead">
-          Quality work at Construction Company is achieved through careful
-          planning, <br />
-          dedication, and skilled execution.
-        </p>
-        <a href="#contact" class="zp-btn-outline">Contact us</a>
-      </div>
-    </div>
-  </section>
-  <!-- HERO SECTION END HERE -->
-
-  <!-- ABOUT SECTION START HERE -->
-  <section id="about">
-    <div class="container">
-      <div class="wrapper">
-        <div data-aos="fade-right">
-          <h3 class="section-title">About Us</h3>
-          <p class="des">
-            Zaras properties we take pride in all our projects . We are a
-            forward-thinking property development company that embraces future
-            home standards. We oversee the full property development cycle, We
-            acquire, design and repurpose shabby commercial properties into
-            modern rental homes for next generations.
+    <section id="hero">
+      <div class="container">
+        <div class="wrapper" data-aos="fade-up" data-aos-duration="500">
+          <h2 class="main_title">
+            Quality Homes for Future <br />
+            <span
+              class="text-primary typewrite"
+              data-period="2000"
+              data-type='[ "Generations.", "Generations.", "Generations." ]'
+            >
+              <span class="wrap"></span>Generations.</span
+            >
+          </h2>
+          <p class="des lead">
+            Quality work at Construction Company is achieved through careful
+            planning, <br />
+            dedication, and skilled execution.
           </p>
-          <p class="des">
-            Zaras properties have a proven track record of success across many
-            projects, ranging from Service accommodation,Buy to
-            let,conversions to large developments that involve the creation of
-            multiple units.
-          </p>
-          <a href="#portfolio" class="zp-btn">See Portfolio</a>
+          <a href="#contact" class="zp-btn-outline">Contact us</a>
         </div>
+      </div>
+    </section>
+    <!-- HERO SECTION END HERE -->
 
-        <div data-aos="fade-left">
-          <div style="
+    <!-- ABOUT SECTION START HERE -->
+    <section id="about">
+      <div class="container">
+        <div class="wrapper">
+          <div data-aos="fade-right">
+            <h3 class="section-title">About Us</h3>
+            <p class="des">
+              Zaras properties we take pride in all our projects . We are a
+              forward-thinking property development company that embraces future
+              home standards. We oversee the full property development cycle, We
+              acquire, design and repurpose shabby commercial properties into
+              modern rental homes for next generations.
+            </p>
+            <p class="des">
+              Zaras properties have a proven track record of success across many
+              projects, ranging from Service accommodation,Buy to
+              let,conversions to large developments that involve the creation of
+              multiple units.
+            </p>
+            <a href="#portfolio" class="zp-btn">See Portfolio</a>
+          </div>
+
+          <div data-aos="fade-left">
+            <div
+              style="
                 --swiper-navigation-color: #fff;
                 --swiper-pagination-color: #fff;
-              " class="swiper about-slide">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="assets/images/drawing-room05.jpg" alt="image of drawing room" />
+              "
+              class="swiper about-slide"
+            >
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="assets/images/drawing-room05.jpg"
+                    alt="image of drawing room"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="assets/images/market-front-image09.jpg"
+                    alt="front image of market"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="assets/images/bed-room-image04.jpg"
+                    alt="image of bedroom"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="assets/images/home-front-image08.jpg"
+                    alt="front image of home"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="assets/images/bathroom-image11.jpg"
+                    alt="image of bathroom"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="assets/images/kitchen-image07.jpg"
+                    alt="image of kitchen"
+                  />
+                </div>
               </div>
-              <div class="swiper-slide">
-                <img src="assets/images/market-front-image09.jpg" alt="front image of market" />
-              </div>
-              <div class="swiper-slide">
-                <img src="assets/images/bed-room-image04.jpg" alt="image of bedroom" />
-              </div>
-              <div class="swiper-slide">
-                <img src="assets/images/home-front-image08.jpg" alt="front image of home" />
-              </div>
-              <div class="swiper-slide">
-                <img src="assets/images/bathroom-image11.jpg" alt="image of bathroom" />
-              </div>
-              <div class="swiper-slide">
-                <img src="assets/images/kitchen-image07.jpg" alt="image of kitchen" />
-              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-          </div>
 
-          <div class="swiper about-slider">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="assets/images/drawing-room05.jpg" alt="image of drawing room" />
-              </div>
-              <div class="swiper-slide">
-                <img src="assets/images/market-front-image09.jpg" alt="front image of market" />
-              </div>
-              <div class="swiper-slide">
-                <img src="assets/images/bed-room-image04.jpg" alt="image of bedroom" />
-              </div>
-              <div class="swiper-slide">
-                <img src="assets/images/home-front-image08.jpg" alt="front image of home" />
-              </div>
-              <div class="swiper-slide">
-                <img src="assets/images/bathroom-image11.jpg" alt="image of bathroom" />
-              </div>
-              <div class="swiper-slide">
-                <img src="assets/images/kitchen-image07.jpg" alt="image of kitchen" />
+            <div class="swiper about-slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="assets/images/drawing-room05.jpg"
+                    alt="image of drawing room"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="assets/images/market-front-image09.jpg"
+                    alt="front image of market"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="assets/images/bed-room-image04.jpg"
+                    alt="image of bedroom"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="assets/images/home-front-image08.jpg"
+                    alt="front image of home"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="assets/images/bathroom-image11.jpg"
+                    alt="image of bathroom"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="assets/images/kitchen-image07.jpg"
+                    alt="image of kitchen"
+                  />
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- ABOUT SECTION END HERE -->
+    </section>
+    <!-- ABOUT SECTION END HERE -->
 
-  <!-- PORTFOLIO SECTION START HERE -->
-  <section id="portfolio">
-    <div class="container">
-      <div class="wrapper" data-aos="fade-up">
-        <div class="section-header">
-          <h3 class="section-title">Portfolio</h3>
-          <div>
-            <div class="portfolio-swiper-prev">
-              <i class="bi bi-arrow-left-short"></i>
-            </div>
-            <div class="portfolio-swiper-next">
-              <i class="bi bi-arrow-right-short"></i>
-            </div>
-          </div>
-        </div>
-        <div class="section-body">
-          <div class="swiper portfolio-slider">
-            <div class="swiper-wrapper">
-              <!-- slide 1 -->
-              <div class="swiper-slide">
-                <figure>
-                  <img src="assets/images/bed-room-image04.jpg" alt="image of bedroom" />
-                  <figcaption>
-                    <div class="text-end">
-                      <button onclick="previewImage('assets/images/bed-room-image04.jpg')" class="text-white">
-                        <i class="bi bi-arrows-fullscreen"></i>
-                      </button>
-                    </div>
-                    <div class="content">
-                      <h2>Luxury Bedroom</h2>
-                    </div>
-                  </figcaption>
-                </figure>
+    <!-- PORTFOLIO SECTION START HERE -->
+    <section id="portfolio">
+      <div class="container">
+        <div class="wrapper" data-aos="fade-up">
+          <div class="section-header">
+            <h3 class="section-title">Portfolio</h3>
+            <div>
+              <div class="portfolio-swiper-prev">
+                <i class="bi bi-arrow-left-short"></i>
               </div>
-              <!-- slide 2 -->
-              <div class="swiper-slide">
-                <figure>
-                  <img src="assets/images/drawing-room05.jpg" alt="image of kitchen" />
-                  <figcaption>
-                    <div class="text-end">
-                      <button onclick="previewImage('assets/images/drawing-room05.jpg')" class="text-white">
-                        <i class="bi bi-arrows-fullscreen"></i>
-                      </button>
-                    </div>
-                    <div class="content">
-                      <h2>Drawing Room</h2>
-                    </div>
-                  </figcaption>
-                </figure>
-              </div>
-              <!-- slide 3 -->
-              <div class="swiper-slide">
-                <figure>
-                  <img src="assets/images/dining-mobile-image15.jpg" alt="image of kitchen" />
-                  <figcaption>
-                    <div class="text-end">
-                      <button class="text-white" onclick="previewImage('assets/images/dining-mobile-image15.jpg')">
-                        <i class="bi bi-arrows-fullscreen"></i>
-                      </button>
-                    </div>
-                    <div class="content">
-                      <h2>Dining</h2>
-                    </div>
-                  </figcaption>
-                </figure>
-              </div>
-              <div class="swiper-slide">
-                <figure>
-                  <img src="assets/images/kitchen-wide-image10.jpg" alt="image of kitchen" />
-                  <figcaption>
-                    <div class="text-end">
-                      <button class="text-white" onclick="previewImage('assets/images/kitchen-wide-image10.jpg')">
-                        <i class="bi bi-arrows-fullscreen"></i>
-                      </button>
-                    </div>
-                    <div class="content">
-                      <h2>Kitchen</h2>
-                    </div>
-                  </figcaption>
-                </figure>
-              </div>
-              <div class="swiper-slide">
-                <figure>
-                  <img src="assets/images/dining-image03.jpg" alt="image of kitchen" />
-                  <figcaption>
-                    <div class="text-end">
-                      <button class="text-white" onclick="previewImage('assets/images/dining-image03.jpg')">
-                        <i class="bi bi-arrows-fullscreen"></i>
-                      </button>
-                    </div>
-                    <div class="content">
-                      <h2>Dining</h2>
-                    </div>
-                  </figcaption>
-                </figure>
-              </div>
-              
-              <!-- slide 4 -->
-              <div class="swiper-slide">
-                <figure>
-                  <img src="assets/images/bathroom-image11.jpg" alt="image of bathroom" />
-                  <figcaption>
-                    <div class="text-end">
-                      <button class="text-white" onclick="previewImage('assets/images/bathroom-image11.jpg')">
-                        <i class="bi bi-arrows-fullscreen"></i>
-                      </button>
-                    </div>
-                    <div class="content">
-                      <h2>Bathroom</h2>
-                    </div>
-                  </figcaption>
-                </figure>
-              </div>
-              <!-- slide 5 -->
-              <div class="swiper-slide">
-                <figure>
-                  <img src="assets/images/market-front-image09.jpg" alt="Market front image" />
-                  <figcaption>
-                    <div class="text-end">
-                      <button class="text-white" onclick="previewImage('assets/images/market-front-image09.jpg')">
-                        <i class="bi bi-arrows-fullscreen"></i>
-                      </button>
-                    </div>
-                    <div class="content">
-                      <h2>Market</h2>
-                    </div>
-                  </figcaption>
-                </figure>
-              </div>
-              <div class="swiper-slide">
-                <figure>
-                  <img src="assets/images/home-front-mobile-image16.jpg" alt="Market front image" />
-                  <figcaption>
-                    <div class="text-end">
-                      <button class="text-white" onclick="previewImage('assets/images/home-front-mobile-image16.jpg')">
-                        <i class="bi bi-arrows-fullscreen"></i>
-                      </button>
-                    </div>
-                    <div class="content">
-                      <h2>House</h2>
-                    </div>
-                  </figcaption>
-                </figure>
-              </div>
-              <!-- slide 6 -->
-              <div class="swiper-slide">
-                <figure>
-                  <img src="assets/images/besing-mirror-mobile-image14.jpg" alt="besing image" />
-                  <figcaption>
-                    <div class="text-end">
-                      <button class="text-white" onclick="previewImage('assets/images/besing-mirror-mobile-image14.jpg')">
-                        <i class="bi bi-arrows-fullscreen"></i>
-                      </button>
-                    </div>
-                    <div class="content">
-                      <h2>basing</h2>
-                    </div>
-                  </figcaption>
-                </figure>
-              </div>
-              <div class="swiper-slide">
-                <figure>
-                  <img src="assets/images/home-front-image08.jpg" alt="House front image" />
-                  <figcaption>
-                    <div class="text-end">
-                      <button class="text-white" onclick="previewImage('assets/images/home-front-image08.jpg')">
-                        <i class="bi bi-arrows-fullscreen"></i>
-                      </button>
-                    </div>
-                    <div class="content">
-                      <h2>House</h2>
-                    </div>
-                  </figcaption>
-                </figure>
-              </div>
-              <div class="swiper-slide">
-                <figure>
-                  <img src="assets/images/kitchen-mobile-image17.jpg" alt="House front image" />
-                  <figcaption>
-                    <div class="text-end">
-                      <button class="text-white" onclick="previewImage('assets/images/kitchen-mobile-image17.jpg')">
-                        <i class="bi bi-arrows-fullscreen"></i>
-                      </button>
-                    </div>
-                    <div class="content">
-                      <h2>kitchen</h2>
-                    </div>
-                  </figcaption>
-                </figure>
-              </div>
-              <div class="swiper-slide">
-                <figure>
-                  <img src="assets/images/kitchen-image02.jpg" alt="House front image" />
-                  <figcaption>
-                    <div class="text-end">
-                      <button class="text-white" onclick="previewImage('assets/images/kitchen-image02.jpg')">
-                        <i class="bi bi-arrows-fullscreen"></i>
-                      </button>
-                    </div>
-                    <div class="content">
-                      <h2>kitchen</h2>
-                    </div>
-                  </figcaption>
-                </figure>
+              <div class="portfolio-swiper-next">
+                <i class="bi bi-arrow-right-short"></i>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- PORTFOLIO SECTION END HERE -->
-
-  <!-- OUR SERVICES START HERE -->
-  <section id="services" class="main-focus" fade-updata-aos-duration="2000">
-    <div class="container">
-      <div class="wrapper">
-        <div class="section-top">
-          <h2 class="section-title">Our Services</h2>
-        </div>
-        <!-- this section show in only desktop device -->
-        <div class="section-body d-none d-xl-block">
-          <div class="step">
-            <span class="step-count">1</span>
-            <span class="step-count">2</span>
-            <span class="step-count">3</span>
-          </div>
-
-          <div class="step-wrapper">
-            <figure data-aos="fade-down-right" class="step-thumb">
-              <img src="assets/images/buy-property.jpg" alt="Thumbnail" />
-            </figure>
-            <div class="d-flex gap-4" data-aos="fade-left">
-              <div class="step-card shadow">
-                <figure>
-                  <img src="assets/images/icon/money-bag.svg" alt="icon" />
-                </figure>
-                <div>
-                  <h3 class="title">Property Development</h3>
-                  <p class="des">
-                    Zaras Properties oversees the full property development
-                    cycle, including acquisition, design, and repurposing of
-                    shabby commercial properties into modern rental homes for
-                    future generations.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="step-wrapper second">
-            <figure class="step-thumb">
-              <img src="assets/images/provide-property.jpg" alt="Thumbnail" />
-            </figure>
-            <div class="d-flex gap-4">
-              <div class="step-card" data-aos="fade-right">
-                <figure>
-                  <img src="assets/images/icon/Icon-Book.svg" alt="Icon" />
-                </figure>
-                <div>
-                  <h3 class="title">Buy and Sell Property</h3>
-                  <p class="des">
-                    In addition to property development, Zaras Properties
-                    facilitates the buying and selling of properties, offering
-                    a comprehensive range of real estate services to investors
-                    and homeowners alike.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="step-wrapper">
-            <figure data-aos="fade-up-right" class="step-thumb">
-              <img src="assets/images/sell-property.png" alt="Thumbnail" />
-            </figure>
-            <div class="d-flex gap-4">
-              <div class="step-card" data-aos="fade-left">
-                <figure>
-                  <img src="assets/images/icon/Icon-Sell.svg" alt="Icon" />
-                </figure>
-                <div>
-                  <h3 class="title">Investment Opportunities</h3>
-                  <p class="des">
-                    Zaras Properties offers investment options such as fixed
-                    interest loans and joint venture partnerships for
-                    individuals or entities interested in property
-                    development, ensuring compliance with regulatory
-                    guidelines.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- this section show in only mobile device -->
-        <div class="section-body d-flex justify-content-center gap-4 d-xl-none">
-          <div class="step position-relative">
-            <span class="step-count">1</span>
-            <span class="step-count">2</span>
-            <span class="step-count">3</span>
-          </div>
-
-          <div>
-            <div class="step-wrapper mb-5">
-              <div class="d-flex gap-4">
-                <div class="step-card shadow">
+          <div class="section-body">
+            <div class="swiper portfolio-slider">
+              <div class="swiper-wrapper">
+                <!-- slide 1 -->
+                <div class="swiper-slide">
                   <figure>
-                    <img src="assets/images/icon/money-bag.svg" alt="icon" />
+                    <img
+                      src="assets/images/bed-room-image04.jpg"
+                      alt="image of bedroom"
+                    />
+                    <figcaption>
+                      <div class="text-end">
+                        <button
+                          onclick="previewImage('assets/images/bed-room-image04.jpg')"
+                          class="text-white"
+                        >
+                          <i class="bi bi-arrows-fullscreen"></i>
+                        </button>
+                      </div>
+                      <div class="content">
+                        <h2>Luxury Bedroom</h2>
+                      </div>
+                    </figcaption>
                   </figure>
+                </div>
+                <!-- slide 2 -->
+                <div class="swiper-slide">
+                  <figure>
+                    <img
+                      src="assets/images/drawing-room05.jpg"
+                      alt="image of kitchen"
+                    />
+                    <figcaption>
+                      <div class="text-end">
+                        <button
+                          onclick="previewImage('assets/images/drawing-room05.jpg')"
+                          class="text-white"
+                        >
+                          <i class="bi bi-arrows-fullscreen"></i>
+                        </button>
+                      </div>
+                      <div class="content">
+                        <h2>Drawing Room</h2>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </div>
+                <!-- slide 3 -->
+                <div class="swiper-slide">
+                  <figure>
+                    <img
+                      src="assets/images/dining-mobile-image15.jpg"
+                      alt="image of kitchen"
+                    />
+                    <figcaption>
+                      <div class="text-end">
+                        <button
+                          class="text-white"
+                          onclick="previewImage('assets/images/dining-mobile-image15.jpg')"
+                        >
+                          <i class="bi bi-arrows-fullscreen"></i>
+                        </button>
+                      </div>
+                      <div class="content">
+                        <h2>Dining</h2>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </div>
+                <!-- slide 4 -->
+                <div class="swiper-slide">
+                  <figure>
+                    <img
+                      src="assets/images/kitchen-wide-image10.jpg"
+                      alt="image of kitchen"
+                    />
+                    <figcaption>
+                      <div class="text-end">
+                        <button
+                          class="text-white"
+                          onclick="previewImage('assets/images/kitchen-wide-image10.jpg')"
+                        >
+                          <i class="bi bi-arrows-fullscreen"></i>
+                        </button>
+                      </div>
+                      <div class="content">
+                        <h2>Kitchen</h2>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </div>
+                <!--  -->
+                <div class="swiper-slide">
+                  <figure>
+                    <img
+                      src="assets/images/dining-image03.jpg"
+                      alt="image of kitchen"
+                    />
+                    <figcaption>
+                      <div class="text-end">
+                        <button
+                          class="text-white"
+                          onclick="previewImage('assets/images/dining-image03.jpg')"
+                        >
+                          <i class="bi bi-arrows-fullscreen"></i>
+                        </button>
+                      </div>
+                      <div class="content">
+                        <h2>Dining</h2>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <!-- slide 4 -->
+                <div class="swiper-slide">
+                  <figure>
+                    <img
+                      src="assets/images/bathroom-image11.jpg"
+                      alt="image of bathroom"
+                    />
+                    <figcaption>
+                      <div class="text-end">
+                        <button
+                          class="text-white"
+                          onclick="previewImage('assets/images/bathroom-image11.jpg')"
+                        >
+                          <i class="bi bi-arrows-fullscreen"></i>
+                        </button>
+                      </div>
+                      <div class="content">
+                        <h2>Bathroom</h2>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </div>
+                <!-- slide 5 -->
+                <div class="swiper-slide">
+                  <figure>
+                    <img
+                      src="assets/images/market-front-image09.jpg"
+                      alt="Market front image"
+                    />
+                    <figcaption>
+                      <div class="text-end">
+                        <button
+                          class="text-white"
+                          onclick="previewImage('assets/images/market-front-image09.jpg')"
+                        >
+                          <i class="bi bi-arrows-fullscreen"></i>
+                        </button>
+                      </div>
+                      <div class="content">
+                        <h2>Market</h2>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="swiper-slide">
+                  <figure>
+                    <img
+                      src="assets/images/home-front-mobile-image16.jpg"
+                      alt="Market front image"
+                    />
+                    <figcaption>
+                      <div class="text-end">
+                        <button
+                          class="text-white"
+                          onclick="previewImage('assets/images/home-front-mobile-image16.jpg')"
+                        >
+                          <i class="bi bi-arrows-fullscreen"></i>
+                        </button>
+                      </div>
+                      <div class="content">
+                        <h2>House</h2>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </div>
+                <!-- slide 6 -->
+                <div class="swiper-slide">
+                  <figure>
+                    <img
+                      src="assets/images/besing-mirror-mobile-image14.jpg"
+                      alt="besing image"
+                    />
+                    <figcaption>
+                      <div class="text-end">
+                        <button
+                          class="text-white"
+                          onclick="previewImage('assets/images/besing-mirror-mobile-image14.jpg')"
+                        >
+                          <i class="bi bi-arrows-fullscreen"></i>
+                        </button>
+                      </div>
+                      <div class="content">
+                        <h2>basing</h2>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </div>
+                <!--  -->
+                <div class="swiper-slide">
+                  <figure>
+                    <img
+                      src="assets/images/home-front-image08.jpg"
+                      alt="House front image"
+                    />
+                    <figcaption>
+                      <div class="text-end">
+                        <button
+                          class="text-white"
+                          onclick="previewImage('assets/images/home-front-image08.jpg')"
+                        >
+                          <i class="bi bi-arrows-fullscreen"></i>
+                        </button>
+                      </div>
+                      <div class="content">
+                        <h2>House</h2>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="swiper-slide">
+                  <figure>
+                    <img
+                      src="assets/images/kitchen-mobile-image17.jpg"
+                      alt="House front image"
+                    />
+                    <figcaption>
+                      <div class="text-end">
+                        <button
+                          class="text-white"
+                          onclick="previewImage('assets/images/kitchen-mobile-image17.jpg')"
+                        >
+                          <i class="bi bi-arrows-fullscreen"></i>
+                        </button>
+                      </div>
+                      <div class="content">
+                        <h2>kitchen</h2>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="swiper-slide">
+                  <figure>
+                    <img
+                      src="assets/images/kitchen-image02.jpg"
+                      alt="House front image"
+                    />
+                    <figcaption>
+                      <div class="text-end">
+                        <button
+                          class="text-white"
+                          onclick="previewImage('assets/images/kitchen-image02.jpg')"
+                        >
+                          <i class="bi bi-arrows-fullscreen"></i>
+                        </button>
+                      </div>
+                      <div class="content">
+                        <h2>kitchen</h2>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- PORTFOLIO SECTION END HERE -->
+
+    <!-- OUR SERVICES START HERE -->
+    <section id="services" class="main-focus" fade-updata-aos-duration="2000">
+      <div class="container">
+        <div class="wrapper">
+          <div class="section-top">
+            <h2 class="section-title">Our Services</h2>
+          </div>
+          <!-- this section show in only desktop device -->
+          <div class="section-body d-none d-xl-block">
+            <div class="step">
+              <span class="step-count">1</span>
+              <span class="step-count">2</span>
+              <span class="step-count">3</span>
+            </div>
+
+            <div class="step-wrapper">
+              <figure data-aos="fade-down-right" class="step-thumb">
+                <img
+                  src="assets/images/Property_development.jpg"
+                  alt="Thumbnail"
+                />
+              </figure>
+              <div class="d-flex gap-4" data-aos="fade-left">
+                <div class="step-card shadow">
+                  <div class="icon">
+                    <svg
+                      id="Layer_1"
+                      data-name="Layer 1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 122.88 115.52"
+                    >
+                      <defs>
+                        <style>
+                          .cls-1 {
+                            fill-rule: evenodd;
+                          }
+                        </style>
+                      </defs>
+                      <title>property</title>
+                      <path
+                        class="cls-1"
+                        d="M119.2,111.86V3.66H57.86V41l-3.65-2.9V2.68A2.89,2.89,0,0,1,55.05.87h0A2.92,2.92,0,0,1,57.13,0h62.8A2.92,2.92,0,0,1,122,.86l.13.14a2.9,2.9,0,0,1,.74,1.94V31.15h0v80.71H104V87.1a1.67,1.67,0,0,0-1.67-1.67H90.44v30.09h32.44v-3.66ZM7.74,115.51V79.74a6.18,6.18,0,0,1-4.27.2A5.08,5.08,0,0,1,1.12,78.3,5.2,5.2,0,0,1,0,75.64a6.72,6.72,0,0,1,1.61-5h0a1.67,1.67,0,0,1,.23-.23l38.38-30a1.38,1.38,0,0,1,1.81-.07l38.47,29.9h0l.17.15a6.34,6.34,0,0,1,1.79,5.84,5.39,5.39,0,0,1-3.4,3.82,5.9,5.9,0,0,1-4.57-.3v35.59H70.77V78.18c0-.68-26.39-21.54-29.3-23.81-3.09,2.35-30,23-30,23.91v37.24ZM41.33,79.2A14.75,14.75,0,0,1,56,93.89v15.65H26.64V93.89A14.73,14.73,0,0,1,41.33,79.2Zm1.27,2.62V93.93H53.46v0A12.17,12.17,0,0,0,42.6,81.82Zm0,14.66V107H53.46V96.48ZM40.05,107V96.48H29.2V107Zm0-13.06V81.82A12.18,12.18,0,0,0,29.2,93.89v0ZM23.94,112.32H58.71v2.55H23.94v-2.55ZM66.68,12.87h9.85a.29.29,0,0,1,.28.28v11.4a.28.28,0,0,1-.28.27H66.68a.27.27,0,0,1-.28-.27V13.15a.28.28,0,0,1,.28-.28Zm33.86,0h9.85a.29.29,0,0,1,.28.28v11.4a.28.28,0,0,1-.28.27h-9.85a.28.28,0,0,1-.28-.27V13.15a.29.29,0,0,1,.28-.28Zm-16.93,0h9.85a.29.29,0,0,1,.28.28v11.4a.28.28,0,0,1-.28.27H83.61a.27.27,0,0,1-.28-.27V13.15a.28.28,0,0,1,.28-.28ZM66.68,35.76h9.85a.28.28,0,0,1,.28.27v11.4a.29.29,0,0,1-.28.28H66.68a.28.28,0,0,1-.28-.28V36a.27.27,0,0,1,.28-.27Zm33.86,0h9.85a.28.28,0,0,1,.28.27v11.4a.29.29,0,0,1-.28.28h-9.85a.29.29,0,0,1-.28-.28V36a.28.28,0,0,1,.28-.27Zm-16.93,0h9.85a.28.28,0,0,1,.28.27v11.4a.29.29,0,0,1-.28.28H83.61a.28.28,0,0,1-.28-.28V36a.27.27,0,0,1,.28-.27Zm16.93,22.88h9.85a.29.29,0,0,1,.28.28V70.31a.29.29,0,0,1-.28.28h-9.85a.29.29,0,0,1-.28-.28V58.92a.29.29,0,0,1,.28-.28Zm-16.93,0h9.85a.29.29,0,0,1,.28.28V70.31a.29.29,0,0,1-.28.28h-3V66.82l-7.11-5.64V58.92a.28.28,0,0,1,.28-.28Z"
+                      />
+                    </svg>
+                  </div>
                   <div>
                     <h3 class="title">Property Development</h3>
                     <p class="des">
@@ -613,12 +745,15 @@
               </div>
             </div>
 
-            <div class="step-wrapper mb-5">
+            <div class="step-wrapper second">
+              <figure class="step-thumb">
+                <img src="assets/images/provide-property.jpg" alt="Thumbnail" />
+              </figure>
               <div class="d-flex gap-4">
-                <div class="step-card shadow">
-                  <figure>
-                    <img src="assets/images/icon/Icon-Book.svg" alt="Icon" />
-                  </figure>
+                <div class="step-card" data-aos="fade-right">
+                  <div class="icon">
+                    <img src="assets/images/icon/trust-icon.svg" alt="" />
+                  </div>
                   <div>
                     <h3 class="title">Buy and Sell Property</h3>
                     <p class="des">
@@ -632,12 +767,38 @@
               </div>
             </div>
 
-            <div class="step-wrapper mb-5">
+            <div class="step-wrapper">
+              <figure data-aos="fade-up-right" class="step-thumb">
+                <img src="assets/images/Investment.jpg" alt="Thumbnail" />
+              </figure>
               <div class="d-flex gap-4">
-                <div class="step-card shadow">
-                  <figure>
-                    <img src="assets/images/icon/Icon-Sell.svg" alt="Icon" />
-                  </figure>
+                <div class="step-card" data-aos="fade-left">
+                  <div class="icon invest">
+                    <?xml version="1.0" encoding="utf-8"?><svg
+                      version="1.1"
+                      id="Layer_1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      x="0px"
+                      y="0px"
+                      viewBox="0 0 82.86 122.88"
+                      style="enable-background: new 0 0 82.86 122.88"
+                      xml:space="preserve"
+                    >
+                      <style type="text/css">
+                        .st0 {
+                          fill-rule: evenodd;
+                          clip-rule: evenodd;
+                        }
+                      </style>
+                      <g>
+                        <path
+                          class="st0"
+                          d="M44.59,115.61C60.43,121.69,84.32,99,82.79,73.9c-17.12-0.7-31.77,10.01-38.2,21.74v-22 c18.89-1.6,33.73-17.45,33.73-36.75C78.32,16.52,61.81,0,41.43,0C21.06,0,4.54,16.52,4.54,36.89c0,19.31,14.83,35.15,33.72,36.75 v19.54c-7.6-10.94-22.19-20.43-38.2-19.78c-1.46,24.03,22.14,46.25,38.2,42.81v6.65h6.33V115.61L44.59,115.61z M55.47,26.19 l-9.08,1.43c-0.46-1.15-0.86-1.94-1.23-2.38c-0.37-0.44-0.96-0.89-1.81-1.34v7.04c4.93,1.32,8.22,2.71,9.88,4.16 c2.19,1.97,3.28,4.45,3.28,7.48c0,1.76-0.39,3.39-1.18,4.86c-0.79,1.48-1.8,2.71-3.02,3.71c-1.22,0.99-2.53,1.7-3.91,2.15 c-1.38,0.45-3.07,0.71-5.06,0.79v4.59h-3.54v-4.59c-2.39-0.21-4.32-0.59-5.81-1.15c-1.48-0.56-2.77-1.33-3.85-2.32 c-1.07-0.98-1.91-2.04-2.49-3.18c-0.58-1.14-1.02-2.52-1.31-4.13l9.82-1.14c0.29,1.6,0.69,2.75,1.19,3.46 c0.49,0.71,1.31,1.34,2.45,1.89v-8.61c-3.29-0.91-5.62-1.7-6.99-2.36c-1.37-0.66-2.56-1.74-3.57-3.21 c-1.01-1.47-1.51-3.26-1.51-5.37c0-2.89,1.01-5.31,3.03-7.25c2.03-1.94,5.04-3.03,9.03-3.23V15.1h3.54v2.39 c3.64,0.22,6.42,1.08,8.35,2.58C53.62,21.56,54.89,23.59,55.47,26.19L55.47,26.19z M39.81,23.78c-1.05,0.34-1.77,0.76-2.18,1.26 c-0.41,0.5-0.61,1.1-0.61,1.78c0,0.71,0.21,1.33,0.62,1.85c0.42,0.53,1.14,0.97,2.17,1.33V23.78L39.81,23.78z M43.35,47.76 c1.38-0.31,2.39-0.82,3.03-1.53c0.64-0.71,0.96-1.5,0.96-2.38c0-0.76-0.27-1.47-0.81-2.12c-0.54-0.64-1.6-1.24-3.17-1.79V47.76 L43.35,47.76z M43.66,109.94c5.01-8.41,14.53-15.11,21.62-20.6c0.84-0.65,1.68-1.3,2.36-1.83c0.47-0.36,1.14-0.28,1.5,0.18 c0.36,0.47,0.28,1.14-0.18,1.5c-0.88,0.69-1.61,1.26-2.36,1.84c-6.59,5.1-15.54,11.36-20.39,18.9H43.66L43.66,109.94z M13.22,86.25 c-0.45-0.42-0.48-1.12-0.06-1.57c0.42-0.45,1.12-0.48,1.57-0.06c8.58,7.94,16.69,14.99,22.36,25.32h-2.55 C29.01,100.32,21.3,93.72,13.22,86.25L13.22,86.25z"
+                        />
+                      </g>
+                    </svg>
+                  </div>
                   <div>
                     <h3 class="title">Investment Opportunities</h3>
                     <p class="des">
@@ -652,484 +813,748 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- OUR SERVICES END HERE -->
+          <!-- this section show in only mobile device -->
+          <div
+            class="section-body d-flex justify-content-center gap-4 d-xl-none"
+          >
+            <div class="step position-relative">
+              <span class="step-count">1</span>
+              <span class="step-count">2</span>
+              <span class="step-count">3</span>
+            </div>
 
-  <!-- =================== INVESTORS SECTION START =================== -->
-  <section id="inverstor" class="investors" fade-updata-aos-duration="2000">
-    <div class="container">
-      <div class="section-top">
-        <h1 class="title">why choose to invest Zaras properties now</h1>
-        <div class="des-wrapper">
-          <p class="des">
-            We are an experience development and construction company our
-            investors benefit from partnering with a company that delivers.
-          </p>
-          <a href="#contact" class="getstarted">get started</a>
-        </div>
-      </div>
-      <div class="row g-4">
-        <div class="col-lg-6">
-          <ul class="investor-points">
-            <li data-aos="fade-right" class="d-flex">
-              <div class="left">
-                <svg width="30" height="30" viewBox="0 0 99 99" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g filter="url(#filter0_f_1201_189)">
-                    <circle cx="49.5" cy="49.5" r="23.5" fill="#F9A526" />
-                  </g>
-                  <defs>
-                    <filter id="filter0_f_1201_189" x="0" y="0" width="99" height="99" filterUnits="userSpaceOnUse"
-                      color-interpolation-filters="sRGB">
-                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-                      <feGaussianBlur stdDeviation="13" result="effect1_foregroundBlur_1201_189" />
-                    </filter>
-                  </defs>
-                </svg>
-                <span class="number"> 01 </span>
+            <div>
+              <div class="step-wrapper mb-5">
+                <div class="d-flex gap-4">
+                  <div class="step-card shadow">
+                    <div class="icon">
+                      <svg
+                        id="Layer_1"
+                        data-name="Layer 1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 122.88 115.52"
+                      >
+                        <defs>
+                          <style>
+                            .cls-1 {
+                              fill-rule: evenodd;
+                            }
+                          </style>
+                        </defs>
+                        <title>property</title>
+                        <path
+                          class="cls-1"
+                          d="M119.2,111.86V3.66H57.86V41l-3.65-2.9V2.68A2.89,2.89,0,0,1,55.05.87h0A2.92,2.92,0,0,1,57.13,0h62.8A2.92,2.92,0,0,1,122,.86l.13.14a2.9,2.9,0,0,1,.74,1.94V31.15h0v80.71H104V87.1a1.67,1.67,0,0,0-1.67-1.67H90.44v30.09h32.44v-3.66ZM7.74,115.51V79.74a6.18,6.18,0,0,1-4.27.2A5.08,5.08,0,0,1,1.12,78.3,5.2,5.2,0,0,1,0,75.64a6.72,6.72,0,0,1,1.61-5h0a1.67,1.67,0,0,1,.23-.23l38.38-30a1.38,1.38,0,0,1,1.81-.07l38.47,29.9h0l.17.15a6.34,6.34,0,0,1,1.79,5.84,5.39,5.39,0,0,1-3.4,3.82,5.9,5.9,0,0,1-4.57-.3v35.59H70.77V78.18c0-.68-26.39-21.54-29.3-23.81-3.09,2.35-30,23-30,23.91v37.24ZM41.33,79.2A14.75,14.75,0,0,1,56,93.89v15.65H26.64V93.89A14.73,14.73,0,0,1,41.33,79.2Zm1.27,2.62V93.93H53.46v0A12.17,12.17,0,0,0,42.6,81.82Zm0,14.66V107H53.46V96.48ZM40.05,107V96.48H29.2V107Zm0-13.06V81.82A12.18,12.18,0,0,0,29.2,93.89v0ZM23.94,112.32H58.71v2.55H23.94v-2.55ZM66.68,12.87h9.85a.29.29,0,0,1,.28.28v11.4a.28.28,0,0,1-.28.27H66.68a.27.27,0,0,1-.28-.27V13.15a.28.28,0,0,1,.28-.28Zm33.86,0h9.85a.29.29,0,0,1,.28.28v11.4a.28.28,0,0,1-.28.27h-9.85a.28.28,0,0,1-.28-.27V13.15a.29.29,0,0,1,.28-.28Zm-16.93,0h9.85a.29.29,0,0,1,.28.28v11.4a.28.28,0,0,1-.28.27H83.61a.27.27,0,0,1-.28-.27V13.15a.28.28,0,0,1,.28-.28ZM66.68,35.76h9.85a.28.28,0,0,1,.28.27v11.4a.29.29,0,0,1-.28.28H66.68a.28.28,0,0,1-.28-.28V36a.27.27,0,0,1,.28-.27Zm33.86,0h9.85a.28.28,0,0,1,.28.27v11.4a.29.29,0,0,1-.28.28h-9.85a.29.29,0,0,1-.28-.28V36a.28.28,0,0,1,.28-.27Zm-16.93,0h9.85a.28.28,0,0,1,.28.27v11.4a.29.29,0,0,1-.28.28H83.61a.28.28,0,0,1-.28-.28V36a.27.27,0,0,1,.28-.27Zm16.93,22.88h9.85a.29.29,0,0,1,.28.28V70.31a.29.29,0,0,1-.28.28h-9.85a.29.29,0,0,1-.28-.28V58.92a.29.29,0,0,1,.28-.28Zm-16.93,0h9.85a.29.29,0,0,1,.28.28V70.31a.29.29,0,0,1-.28.28h-3V66.82l-7.11-5.64V58.92a.28.28,0,0,1,.28-.28Z"
+                        />
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 class="title">Property Development</h3>
+                      <p class="des">
+                        Zaras Properties oversees the full property development
+                        cycle, including acquisition, design, and repurposing of
+                        shabby commercial properties into modern rental homes
+                        for future generations.
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="right">
-                <h3>Investor Benefits: Partnering</h3>
-                <p>
-                  We are an experience development and construction company
-                  our investors benefit from partnering with a company that
-                  delivers.
-                </p>
-              </div>
-            </li>
-            <li data-aos="fade-right" class="d-flex">
-              <div class="left">
-                <svg width="87" height="87" viewBox="0 0 87 87" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g filter="url(#filter0_f_1201_197)">
-                    <circle cx="43.5" cy="43.5" r="23.5" fill="#26F93B" />
-                  </g>
-                  <defs>
-                    <filter id="filter0_f_1201_197" x="0" y="0" width="87" height="87" filterUnits="userSpaceOnUse"
-                      color-interpolation-filters="sRGB">
-                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-                      <feGaussianBlur stdDeviation="10" result="effect1_foregroundBlur_1201_197" />
-                    </filter>
-                  </defs>
-                </svg>
 
-                <span class="number"> 02 </span>
+              <div class="step-wrapper mb-5">
+                <div class="d-flex gap-4">
+                  <div class="step-card shadow">
+                    <div class="icon">
+                      <img src="assets/images/icon/trust-icon.svg" alt="" />
+                    </div>
+                    <div>
+                      <h3 class="title">Buy and Sell Property</h3>
+                      <p class="des">
+                        In addition to property development, Zaras Properties
+                        facilitates the buying and selling of properties,
+                        offering a comprehensive range of real estate services
+                        to investors and homeowners alike.
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="right">
-                <h3>Win-Win Solutions: Approach</h3>
-                <p>
-                  We take our partnerships incredibly seriously and always
-                  work very hard to create win-win solutions that work for us
-                  and our investors.
-                </p>
-              </div>
-            </li>
-            <li data-aos="fade-right" class="d-flex">
-              <div class="left">
-                <svg width="87" height="87" viewBox="0 0 87 87" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g filter="url(#filter0_f_1201_203)">
-                    <circle cx="43.5" cy="43.5" r="23.5" fill="#26F9BA" />
-                  </g>
-                  <defs>
-                    <filter id="filter0_f_1201_203" x="0" y="0" width="87" height="87" filterUnits="userSpaceOnUse"
-                      color-interpolation-filters="sRGB">
-                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-                      <feGaussianBlur stdDeviation="10" result="effect1_foregroundBlur_1201_203" />
-                    </filter>
-                  </defs>
-                </svg>
 
-                <span class="number"> 03 </span>
+              <div class="step-wrapper mb-5">
+                <div class="d-flex gap-4">
+                  <div class="step-card shadow">
+                    <div class="icon invest">
+                      <?xml version="1.0" encoding="utf-8"?><svg
+                        version="1.1"
+                        id="Layer_1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px"
+                        y="0px"
+                        viewBox="0 0 82.86 122.88"
+                        style="enable-background: new 0 0 82.86 122.88"
+                        xml:space="preserve"
+                      >
+                        <style type="text/css">
+                          .st0 {
+                            fill-rule: evenodd;
+                            clip-rule: evenodd;
+                          }
+                        </style>
+                        <g>
+                          <path
+                            class="st0"
+                            d="M44.59,115.61C60.43,121.69,84.32,99,82.79,73.9c-17.12-0.7-31.77,10.01-38.2,21.74v-22 c18.89-1.6,33.73-17.45,33.73-36.75C78.32,16.52,61.81,0,41.43,0C21.06,0,4.54,16.52,4.54,36.89c0,19.31,14.83,35.15,33.72,36.75 v19.54c-7.6-10.94-22.19-20.43-38.2-19.78c-1.46,24.03,22.14,46.25,38.2,42.81v6.65h6.33V115.61L44.59,115.61z M55.47,26.19 l-9.08,1.43c-0.46-1.15-0.86-1.94-1.23-2.38c-0.37-0.44-0.96-0.89-1.81-1.34v7.04c4.93,1.32,8.22,2.71,9.88,4.16 c2.19,1.97,3.28,4.45,3.28,7.48c0,1.76-0.39,3.39-1.18,4.86c-0.79,1.48-1.8,2.71-3.02,3.71c-1.22,0.99-2.53,1.7-3.91,2.15 c-1.38,0.45-3.07,0.71-5.06,0.79v4.59h-3.54v-4.59c-2.39-0.21-4.32-0.59-5.81-1.15c-1.48-0.56-2.77-1.33-3.85-2.32 c-1.07-0.98-1.91-2.04-2.49-3.18c-0.58-1.14-1.02-2.52-1.31-4.13l9.82-1.14c0.29,1.6,0.69,2.75,1.19,3.46 c0.49,0.71,1.31,1.34,2.45,1.89v-8.61c-3.29-0.91-5.62-1.7-6.99-2.36c-1.37-0.66-2.56-1.74-3.57-3.21 c-1.01-1.47-1.51-3.26-1.51-5.37c0-2.89,1.01-5.31,3.03-7.25c2.03-1.94,5.04-3.03,9.03-3.23V15.1h3.54v2.39 c3.64,0.22,6.42,1.08,8.35,2.58C53.62,21.56,54.89,23.59,55.47,26.19L55.47,26.19z M39.81,23.78c-1.05,0.34-1.77,0.76-2.18,1.26 c-0.41,0.5-0.61,1.1-0.61,1.78c0,0.71,0.21,1.33,0.62,1.85c0.42,0.53,1.14,0.97,2.17,1.33V23.78L39.81,23.78z M43.35,47.76 c1.38-0.31,2.39-0.82,3.03-1.53c0.64-0.71,0.96-1.5,0.96-2.38c0-0.76-0.27-1.47-0.81-2.12c-0.54-0.64-1.6-1.24-3.17-1.79V47.76 L43.35,47.76z M43.66,109.94c5.01-8.41,14.53-15.11,21.62-20.6c0.84-0.65,1.68-1.3,2.36-1.83c0.47-0.36,1.14-0.28,1.5,0.18 c0.36,0.47,0.28,1.14-0.18,1.5c-0.88,0.69-1.61,1.26-2.36,1.84c-6.59,5.1-15.54,11.36-20.39,18.9H43.66L43.66,109.94z M13.22,86.25 c-0.45-0.42-0.48-1.12-0.06-1.57c0.42-0.45,1.12-0.48,1.57-0.06c8.58,7.94,16.69,14.99,22.36,25.32h-2.55 C29.01,100.32,21.3,93.72,13.22,86.25L13.22,86.25z"
+                          />
+                        </g>
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 class="title">Investment Opportunities</h3>
+                      <p class="des">
+                        Zaras Properties offers investment options such as fixed
+                        interest loans and joint venture partnerships for
+                        individuals or entities interested in property
+                        development, ensuring compliance with regulatory
+                        guidelines.
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="right">
-                <h3>Options: Loans or Ventures</h3>
-                <p>
-                  There are two ways that we can do this. The first is you
-                  lending funds for projects that we are doing with fixed
-                  interest loans and the second is as a Joint Venture partner
-                  in a property project. Before we can explore this further we
-                  need to make sure we are compliant with the Financial
-                  Conduct Authority guidelines.
-                </p>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="col-lg-6">
-          <div data-aos="fade-down-left" class="image-wrapper">
-            <img src="assets/images/bathroom-image11.jpg" alt="" />
-            <svg width="720" height="904" viewBox="0 0 720 904" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M695 0H40C17.9086 0 0 17.9086 0 40V188.758C0 210.85 17.9087 228.758 40.0001 228.758H454.33C476.421 228.758 494.33 246.667 494.33 268.758V864C494.33 886.091 512.238 904 534.33 904H695C717.091 904 735 886.091 735 864V40C735 17.9086 717.091 0 695 0Z"
-                fill="#48CAE4" fill-opacity="0.3" />
-            </svg>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- =================== INVESTORS SECTION END =================== -->
+    </section>
 
-  <!-- =================== TESTIMONIAL SECTION START =================== -->
-  <section class="testimonial" id="testimonials">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 order-1 order-lg-0">
-          <div class="testimonial-wrappers">
-            <div data-aos="fade-down-right" class="single-testimonial">
-              <img src="assets/images/kitchen-mobile-image17.jpg" class="testimonial-thumb" alt="" />
-              <div class="quote">
-                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#fff" class="bi bi-quote"
-                  viewBox="0 0 16 16">
-                  <path
-                    d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z" />
-                </svg>
-              </div>
-              <p class="des">client 2</p>
-              <h4 class="name">bob harleyu</h4>
-              <p class="testimonial-text">
-                Posuere aliquam sed vestibulum duis vestibulum consectetur.
-                Cursus nulla dictum lacus euismod dignissim habitant ut amet
-                commodo.
-              </p>
-            </div>
-            <div data-aos="fade-up-right" data-aos-delay="200" class="single-testimonial">
-              <img src="assets/images/kitchen-mobile-image17.jpg" class="testimonial-thumb" alt="" />
-              <div class="quote">
-                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#fff" class="bi bi-quote"
-                  viewBox="0 0 16 16">
-                  <path
-                    d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z" />
-                </svg>
-              </div>
-              <p class="des">client 2</p>
-              <h4 class="name">bob harleyu</h4>
-              <p class="testimonial-text">
-                Posuere aliquam sed vestibulum duis vestibulum consectetur.
-                Cursus nulla dictum lacus euismod dignissim habitant ut amet
-                commodo.
-              </p>
-            </div>
-            <div data-aos="zoom-in" data-aos-delay="400" class="single-testimonial">
-              <img src="assets/images/kitchen-mobile-image17.jpg" class="testimonial-thumb" alt="" />
-              <div class="quote">
-                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#fff" class="bi bi-quote"
-                  viewBox="0 0 16 16">
-                  <path
-                    d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z" />
-                </svg>
-              </div>
-              <p class="des">client 2</p>
-              <h4 class="name">bob harleyu</h4>
-              <p class="testimonial-text">
-                Posuere aliquam sed vestibulum duis vestibulum consectetur.
-                Cursus nulla dictum lacus euismod dignissim habitant ut amet
-                commodo.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 order-0 order-lg-1">
-          <div data-aos="fade-left" class="right-wrapper">
-            <h1>what our client say</h1>
-            <p>
-              Convallis nec ac purus nunc. Maecenas pharetra scelerisque
-              tempor vulputate enim bibendum consectetur.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- =================== TESTIMONIAL SECTION END =================== -->
+    <!-- OUR SERVICES END HERE -->
 
-  <!-- =================== WHY CHOOSE US SECTION START =================== -->
-  <section class="whychoose" id="whyUs">
-    <div class="section-top" data-aos="fade-up">
-      <h1 class="title">WHY CHOOSE ZARAS PROPERTY</h1>
-      <p>
-        Founded by Kevin Smith back in 2000, Renovate has established itself
-        as one of the greatest and <br />
-        prestigious providers of construction focused interior renovation
-        services and building.
-      </p>
-    </div>
-    <div class="container">
-      <div class="row g-3">
-        <div class="col-lg-4">
-          <div class="whycard" data-aos="fade-up" data-aos-delay="50">
-            <div class="icon-wrapper">
-              <div class="icon">
-                <i class="fa fa-users"></i>
-              </div>
-              <div class="line"></div>
-              <div class="ball"></div>
-            </div>
-            <h4 class="title">Expertise and Experience</h4>
-            <p class="text">
-              Morbi nulla tortor, dignissim est node cursus euismod est arcu.
-              Nomad at vehicula novum justo magna.
-            </p>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="whycard" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon-wrapper">
-              <div class="icon">
-                <i class="fa fa-handshake" aria-hidden="true"></i>
-              </div>
-              <div class="line"></div>
-              <div class="ball"></div>
-            </div>
-            <h4 class="title">Personalized Approach</h4>
-            <p class="text">
-              Morbi nulla tortor, dignissim est node cursus euismod est arcu.
-              Nomad at vehicula novum justo magna.
-            </p>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="whycard" data-aos="fade-up" data-aos-delay="400" data-aos="fade-up">
-            <div class="icon-wrapper">
-              <div class="icon">
-                <i class="fa fa-cogs"></i>
-              </div>
-              <div class="line"></div>
-              <div class="ball"></div>
-            </div>
-            <h4 class="title">Comprehensive Services</h4>
-            <p class="text">
-              Morbi nulla tortor, dignissim est node cursus euismod est arcu.
-              Nomad at vehicula novum justo magna.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- =================== WHY CHOOSE US SECTION END =================== -->
-
-  <!-- =================== CONTACT US START =================== -->
-  <section class="contactus" id="contact" data-aos="fade-up" fade-updata-aos-duration="2000">
-    <div class="section-top">
-      <h1 class="title">Contact Us</h1>
-    </div>
-    <div class="container">
-      <div class="row g-4">
-        <div class="col-lg-4">
-          <div class="left-info">
-            <h4 class="title">CALL US</h4>
+    <!-- =================== INVESTORS SECTION START =================== -->
+    <section id="inverstor" class="investors" fade-updata-aos-duration="2000">
+      <div class="container">
+        <div class="section-top">
+          <h1 class="title">why choose to invest Zaras properties now</h1>
+          <div class="des-wrapper">
             <p class="des">
-              Call Now for Expert Advice: Contact Zaras Properties for
-              assistance with property development, investment opportunities,
-              or buying and selling properties. Our team is ready to provide
-              tailored guidance to help you succeed. Reach out today!
+              We are an experience development and construction company our
+              investors benefit from partnering with a company that delivers.
             </p>
-            <ul class="locations">
-              <li>
-                <div class="icon">
-                  <i class="fa fa-phone" aria-hidden="true"></i>
+            <a href="#contact" class="getstarted">get started</a>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <ul class="investor-points">
+              <li data-aos="fade-right" class="d-flex">
+                <div class="left">
+                  <svg
+                    width="30"
+                    height="30"
+                    viewBox="0 0 99 99"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g filter="url(#filter0_f_1201_189)">
+                      <circle cx="49.5" cy="49.5" r="23.5" fill="#F9A526" />
+                    </g>
+                    <defs>
+                      <filter
+                        id="filter0_f_1201_189"
+                        x="0"
+                        y="0"
+                        width="99"
+                        height="99"
+                        filterUnits="userSpaceOnUse"
+                        color-interpolation-filters="sRGB"
+                      >
+                        <feFlood
+                          flood-opacity="0"
+                          result="BackgroundImageFix"
+                        />
+                        <feBlend
+                          mode="normal"
+                          in="SourceGraphic"
+                          in2="BackgroundImageFix"
+                          result="shape"
+                        />
+                        <feGaussianBlur
+                          stdDeviation="13"
+                          result="effect1_foregroundBlur_1201_189"
+                        />
+                      </filter>
+                    </defs>
+                  </svg>
+                  <span class="number"> 01 </span>
                 </div>
-                <a href="tel:+447738940597"><span> Phone : +447738940597 </span></a>
+                <div class="right">
+                  <h3>Investor Benefits: Partnering</h3>
+                  <p>
+                    We are an experience development and construction company
+                    our investors benefit from partnering with a company that
+                    delivers.
+                  </p>
+                </div>
               </li>
-              <li>
-                <div class="icon">
-                  <i class="fa fa-envelope" aria-hidden="true"></i>
+              <li data-aos="fade-right" class="d-flex">
+                <div class="left">
+                  <svg
+                    width="87"
+                    height="87"
+                    viewBox="0 0 87 87"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g filter="url(#filter0_f_1201_197)">
+                      <circle cx="43.5" cy="43.5" r="23.5" fill="#26F93B" />
+                    </g>
+                    <defs>
+                      <filter
+                        id="filter0_f_1201_197"
+                        x="0"
+                        y="0"
+                        width="87"
+                        height="87"
+                        filterUnits="userSpaceOnUse"
+                        color-interpolation-filters="sRGB"
+                      >
+                        <feFlood
+                          flood-opacity="0"
+                          result="BackgroundImageFix"
+                        />
+                        <feBlend
+                          mode="normal"
+                          in="SourceGraphic"
+                          in2="BackgroundImageFix"
+                          result="shape"
+                        />
+                        <feGaussianBlur
+                          stdDeviation="10"
+                          result="effect1_foregroundBlur_1201_197"
+                        />
+                      </filter>
+                    </defs>
+                  </svg>
+
+                  <span class="number"> 02 </span>
                 </div>
-                <a href="mailto:Info@zarasproperties.co.uk"><span> Email : Info@zarasproperties.co.uk </span></a>
+                <div class="right">
+                  <h3>Win-Win Solutions: Approach</h3>
+                  <p>
+                    We take our partnerships incredibly seriously and always
+                    work very hard to create win-win solutions that work for us
+                    and our investors.
+                  </p>
+                </div>
+              </li>
+              <li data-aos="fade-right" class="d-flex">
+                <div class="left">
+                  <svg
+                    width="87"
+                    height="87"
+                    viewBox="0 0 87 87"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g filter="url(#filter0_f_1201_203)">
+                      <circle cx="43.5" cy="43.5" r="23.5" fill="#26F9BA" />
+                    </g>
+                    <defs>
+                      <filter
+                        id="filter0_f_1201_203"
+                        x="0"
+                        y="0"
+                        width="87"
+                        height="87"
+                        filterUnits="userSpaceOnUse"
+                        color-interpolation-filters="sRGB"
+                      >
+                        <feFlood
+                          flood-opacity="0"
+                          result="BackgroundImageFix"
+                        />
+                        <feBlend
+                          mode="normal"
+                          in="SourceGraphic"
+                          in2="BackgroundImageFix"
+                          result="shape"
+                        />
+                        <feGaussianBlur
+                          stdDeviation="10"
+                          result="effect1_foregroundBlur_1201_203"
+                        />
+                      </filter>
+                    </defs>
+                  </svg>
+
+                  <span class="number"> 03 </span>
+                </div>
+                <div class="right">
+                  <h3>Options: Loans or Ventures</h3>
+                  <p>
+                    There are two ways that we can do this. The first is you
+                    lending funds for projects that we are doing with fixed
+                    interest loans and the second is as a Joint Venture partner
+                    in a property project. Before we can explore this further we
+                    need to make sure we are compliant with the Financial
+                    Conduct Authority guidelines.
+                  </p>
+                </div>
               </li>
             </ul>
           </div>
-        </div>
-        <div class="col-lg-8">
-          <div class="contact-form">
-            <h3 class="form-title">GET IN TOUCH WITH US</h3>
-            <div class="row g-4">
-              <div class="col-lg-6">
-                <input type="text" placeholder="Name *" />
-              </div>
-              <div class="col-lg-6">
-                <input type="email" placeholder="E-mail*" />
-              </div>
-              <div class="col-lg-6">
-                <input type="email" placeholder="Phone Number" />
-              </div>
-              <div class="col-lg-6">
-                <input type="email" placeholder="Subject *" />
-              </div>
-              <div class="col-12">
-                <textarea name="" id="" cols="30" rows="5" placeholder="Message"></textarea>
-              </div>
-              <div class="col-12">
-                <div class="d-flex justify-content-end w-100">
-                  <span class="conract-btn px-5 d-flex justify-content-between align-items-center gap-3">
-                    SEND
-                    <i class="fa fa-paper-plane"></i>
-                  </span>
-                </div>
-              </div>
+          <div class="col-lg-6">
+            <div data-aos="fade-down-left" class="image-wrapper">
+              <img src="assets/images/bathroom-image11.jpg" alt="" />
+              <svg
+                width="720"
+                height="904"
+                viewBox="0 0 720 904"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M695 0H40C17.9086 0 0 17.9086 0 40V188.758C0 210.85 17.9087 228.758 40.0001 228.758H454.33C476.421 228.758 494.33 246.667 494.33 268.758V864C494.33 886.091 512.238 904 534.33 904H695C717.091 904 735 886.091 735 864V40C735 17.9086 717.091 0 695 0Z"
+                  fill="#48CAE4"
+                  fill-opacity="0.3"
+                />
+              </svg>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- ================== CONTACT US END =================== -->
+    </section>
+    <!-- =================== INVESTORS SECTION END =================== -->
 
-  <!-- ================== FOOTER PART START================== -->
-  <footer>
-    <div class="container">
-      <div class="row g-4 pb-4">
-        <div class="col-lg-4">
-          <div class="footer-left">
-            <h3 class="section-title">ABOUT US</h3>
-            <img src="assets/images/zaras_construction_logo.png" alt="" class="footer-logo" />
-
-            <p class="footer-text">
-              Building isn’t just a job. At the Construction Company, it is
-              our passion. With every project we undertake, we set the bar
-              high and provide the best people in the industry, with a true
-              love of what we do to make our Customers’ vision a reality.
-            </p>
+    <!-- =================== TESTIMONIAL SECTION START =================== -->
+    <section class="testimonial" id="testimonials">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-0">
+            <div class="testimonial-wrappers">
+              <div data-aos="fade-down-right" class="single-testimonial">
+                <img
+                  src="assets/images/kitchen-mobile-image17.jpg"
+                  class="testimonial-thumb"
+                  alt=""
+                />
+                <div class="quote">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="10"
+                    height="10"
+                    fill="#fff"
+                    class="bi bi-quote"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"
+                    />
+                  </svg>
+                </div>
+                <p class="des">client 2</p>
+                <h4 class="name">bob harleyu</h4>
+                <p class="testimonial-text">
+                  Posuere aliquam sed vestibulum duis vestibulum consectetur.
+                  Cursus nulla dictum lacus euismod dignissim habitant ut amet
+                  commodo.
+                </p>
+              </div>
+              <div
+                data-aos="fade-up-right"
+                data-aos-delay="200"
+                class="single-testimonial"
+              >
+                <img
+                  src="assets/images/kitchen-mobile-image17.jpg"
+                  class="testimonial-thumb"
+                  alt=""
+                />
+                <div class="quote">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="10"
+                    height="10"
+                    fill="#fff"
+                    class="bi bi-quote"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"
+                    />
+                  </svg>
+                </div>
+                <p class="des">client 2</p>
+                <h4 class="name">bob harleyu</h4>
+                <p class="testimonial-text">
+                  Posuere aliquam sed vestibulum duis vestibulum consectetur.
+                  Cursus nulla dictum lacus euismod dignissim habitant ut amet
+                  commodo.
+                </p>
+              </div>
+              <div
+                data-aos="zoom-in"
+                data-aos-delay="400"
+                class="single-testimonial"
+              >
+                <img
+                  src="assets/images/kitchen-mobile-image17.jpg"
+                  class="testimonial-thumb"
+                  alt=""
+                />
+                <div class="quote">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="10"
+                    height="10"
+                    fill="#fff"
+                    class="bi bi-quote"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"
+                    />
+                  </svg>
+                </div>
+                <p class="des">client 2</p>
+                <h4 class="name">bob harleyu</h4>
+                <p class="testimonial-text">
+                  Posuere aliquam sed vestibulum duis vestibulum consectetur.
+                  Cursus nulla dictum lacus euismod dignissim habitant ut amet
+                  commodo.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 order-0 order-lg-1">
+            <div data-aos="fade-left" class="right-wrapper">
+              <h1>what our client say</h1>
+              <p>
+                Convallis nec ac purus nunc. Maecenas pharetra scelerisque
+                tempor vulputate enim bibendum consectetur.
+              </p>
+            </div>
           </div>
         </div>
-        <div class="col-lg-4">
-          <div class="footer-middle">
-            <h3 class="section-title">COMPANY LINKS</h3>
-            <div class="links">
+      </div>
+    </section>
+    <!-- =================== TESTIMONIAL SECTION END =================== -->
 
-              <ul class="footer-links pe-3">
-                <li class="style-2"><a href="#hero">Home</a></li>
-                <li class="style-2"><a href="#about">About</a></li>
-                <li class="style-2"><a href="#services">Services</a></li>
-                <li class="style-2"><a href="#portfolio">Portfolio</a></li>
-                <li class="style-2"><a href="#whyUs">Why Us</a></li>
-                <li class="style-2"><a href="#contact">Contact Us</a></li>
+    <!-- =================== WHY CHOOSE US SECTION START =================== -->
+    <section class="whychoose" id="whyUs">
+      <div class="section-top" data-aos="fade-up">
+        <h1 class="title">WHY CHOOSE ZARAS PROPERTY</h1>
+        <p>
+          Founded by Kevin Smith back in 2000, Renovate has established itself
+          as one of the greatest and <br />
+          prestigious providers of construction focused interior renovation
+          services and building.
+        </p>
+      </div>
+      <div class="container">
+        <div class="row g-3">
+          <div class="col-lg-4">
+            <div class="whycard" data-aos="fade-up" data-aos-delay="50">
+              <div class="icon-wrapper">
+                <div class="icon">
+                  <i class="fa fa-users"></i>
+                </div>
+                <div class="line"></div>
+                <div class="ball"></div>
+              </div>
+              <h4 class="title">Expertise and Experience</h4>
+              <p class="text">
+                Morbi nulla tortor, dignissim est node cursus euismod est arcu.
+                Nomad at vehicula novum justo magna.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="whycard" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon-wrapper">
+                <div class="icon">
+                  <i class="fa fa-handshake" aria-hidden="true"></i>
+                </div>
+                <div class="line"></div>
+                <div class="ball"></div>
+              </div>
+              <h4 class="title">Personalized Approach</h4>
+              <p class="text">
+                Morbi nulla tortor, dignissim est node cursus euismod est arcu.
+                Nomad at vehicula novum justo magna.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div
+              class="whycard"
+              data-aos="fade-up"
+              data-aos-delay="400"
+              data-aos="fade-up"
+            >
+              <div class="icon-wrapper">
+                <div class="icon">
+                  <i class="fa fa-cogs"></i>
+                </div>
+                <div class="line"></div>
+                <div class="ball"></div>
+              </div>
+              <h4 class="title">Comprehensive Services</h4>
+              <p class="text">
+                Morbi nulla tortor, dignissim est node cursus euismod est arcu.
+                Nomad at vehicula novum justo magna.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =================== WHY CHOOSE US SECTION END =================== -->
+
+    <!-- =================== CONTACT US START =================== -->
+    <section
+      class="contactus"
+      id="contact"
+      data-aos="fade-up"
+      fade-updata-aos-duration="2000"
+    >
+      <div class="section-top">
+        <h1 class="title">Contact Us</h1>
+      </div>
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <div class="left-info">
+              <h4 class="title">CALL US</h4>
+              <p class="des">
+                Call Now for Expert Advice: Contact Zaras Properties for
+                assistance with property development, investment opportunities,
+                or buying and selling properties. Our team is ready to provide
+                tailored guidance to help you succeed. Reach out today!
+              </p>
+              <ul class="locations">
+                <li>
+                  <div class="icon">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                  </div>
+                  <a href="tel:+447738940597"
+                    ><span> Phone : +447738940597 </span></a
+                  >
+                </li>
+                <li>
+                  <div class="icon">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                  </div>
+                  <a href="mailto:Info@zarasproperties.co.uk"
+                    ><span> Email : Info@zarasproperties.co.uk </span></a
+                  >
+                </li>
               </ul>
             </div>
           </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="footer-right">
-            <h3 class="section-title">CONTACT INFO</h3>
-            <ul class="footer-address">
-              <li class="phone">
-                <span class="hl">Phone:</span>
-                <a href="tell:+44773894059"><span class="text">+447738940597</span></a>
-              </li>
-              <li class="email">
-                <span class="hl">E-mail:</span>
-                <a href="mailto:Info@zarasproperties.co.uk"><span class="text">Info@zarasproperties.co.uk</span></a>
-              </li>
-            </ul>
-            <div class="socials">
-              <a target="_blank" href="#"><i class="fab fa-twitter"></i></a>
-              <a target="_blank" href="#"><i class="fab fa-facebook"></i></a>
-              <a target="_blank" href="#"><i class="fab fa-google-plus"></i></a>
-              <a target="_blank" href="#"><i class="fab fa-pinterest"></i></a>
-              <a target="_blank" href="#"><i class="fab fa-dribbble"></i></a>
+          <div class="col-lg-8">
+            <div class="contact-form">
+              <h3 class="form-title">GET IN TOUCH WITH US</h3>
+              <div class="row g-4">
+                <div class="col-lg-6">
+                  <input type="text" placeholder="Name *" />
+                </div>
+                <div class="col-lg-6">
+                  <input type="email" placeholder="E-mail*" />
+                </div>
+                <div class="col-lg-6">
+                  <input type="email" placeholder="Phone Number" />
+                </div>
+                <div class="col-lg-6">
+                  <input type="email" placeholder="Subject *" />
+                </div>
+                <div class="col-12">
+                  <textarea
+                    name=""
+                    id=""
+                    cols="30"
+                    rows="5"
+                    placeholder="Message"
+                  ></textarea>
+                </div>
+                <div class="col-12">
+                  <div class="d-flex justify-content-end w-100">
+                    <span
+                      class="conract-btn px-5 d-flex justify-content-between align-items-center gap-3"
+                    >
+                      SEND
+                      <i class="fa fa-paper-plane"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="footer-bottom">
+    </section>
+    <!-- ================== CONTACT US END =================== -->
+
+    <!-- ================== FOOTER PART START================== -->
+    <footer>
       <div class="container">
-        <div class="bottom-wrapper">
-          <p>&copy; Copy write all write reserved by Zaras Properties
-          <p>
-          <ul class="footer-link">
-            <li><a href="#">HISTORY</a></li>
-            <li><a href="#"> FAQ</a></li>
-            <li><a href="#">EVENTS</a></li>
-          </ul>
+        <div class="row g-4 pb-4">
+          <div class="col-lg-4">
+            <div class="footer-left">
+              <h3 class="section-title">ABOUT US</h3>
+              <img
+                src="assets/images/zaras_construction_logo.png"
+                alt=""
+                class="footer-logo"
+              />
+
+              <p class="footer-text">
+                Building isn’t just a job. At the Construction Company, it is
+                our passion. With every project we undertake, we set the bar
+                high and provide the best people in the industry, with a true
+                love of what we do to make our Customers’ vision a reality.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="footer-middle">
+              <h3 class="section-title">COMPANY LINKS</h3>
+              <div class="links">
+                <ul class="footer-links pe-3">
+                  <li class="style-2"><a href="#hero">Home</a></li>
+                  <li class="style-2"><a href="#about">About</a></li>
+                  <li class="style-2"><a href="#services">Services</a></li>
+                  <li class="style-2"><a href="#portfolio">Portfolio</a></li>
+                  <li class="style-2"><a href="#whyUs">Why Us</a></li>
+                  <li class="style-2"><a href="#contact">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="footer-right">
+              <h3 class="section-title">CONTACT INFO</h3>
+              <ul class="footer-address">
+                <li class="phone">
+                  <span class="hl">Phone:</span>
+                  <a href="tell:+44773894059"
+                    ><span class="text">+447738940597</span></a
+                  >
+                </li>
+                <li class="email">
+                  <span class="hl">E-mail:</span>
+                  <a href="mailto:Info@zarasproperties.co.uk"
+                    ><span class="text">Info@zarasproperties.co.uk</span></a
+                  >
+                </li>
+              </ul>
+              <div class="socials">
+                <a target="_blank" href="#"><i class="fab fa-twitter"></i></a>
+                <a target="_blank" href="#"><i class="fab fa-facebook"></i></a>
+                <a target="_blank" href="#"
+                  ><i class="fab fa-google-plus"></i
+                ></a>
+                <a target="_blank" href="#"><i class="fab fa-pinterest"></i></a>
+                <a target="_blank" href="#"><i class="fab fa-dribbble"></i></a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
-  <!-- =================== Footer PART END=================== -->
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="bottom-wrapper">
+            <p>&copy; Copy write all write reserved by Zaras Properties</p>
+            <p></p>
+            <ul class="footer-link">
+              <li><a href="#">HISTORY</a></li>
+              <li><a href="#"> FAQ</a></li>
+              <li><a href="#">EVENTS</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- =================== Footer PART END=================== -->
 
-  <!-- BOOTSTRAP JS -->
-  <script src="libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- BOOTSTRAP JS -->
+    <script src="libs/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  <!-- SWIPER JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- SWIPER JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-  <!-- OUR SLIDER INSTANCE -->
-  <script src="libs/swiper/swiper.js"></script>
-  <!-- AOS ANIMATION JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- OUR SLIDER INSTANCE -->
+    <script src="libs/swiper/swiper.js"></script>
+    <!-- AOS ANIMATION JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 
-  <!-- MAIN JS SCRIPT -->
-  <script src="assets/js/main.js"></script>
-  <script>
-    AOS.init({
-      duration: 1000
-    });
-  </script>
-  <script>
-    var TxtType = function (el, toRotate, period) {
-      this.toRotate = toRotate;
-      this.el = el;
-      this.loopNum = 0;
-      this.period = parseInt(period, 10) || 2000;
-      this.txt = '';
-      this.tick();
-      this.isDeleting = false;
-    };
-
-    TxtType.prototype.tick = function () {
-      var i = this.loopNum % this.toRotate.length;
-      var fullTxt = this.toRotate[i];
-
-      if (this.isDeleting) {
-        this.txt = fullTxt.substring(0, this.txt.length - 1);
-      } else {
-        this.txt = fullTxt.substring(0, this.txt.length + 1);
-      }
-
-      this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
-
-      var that = this;
-      var delta = 200 - Math.random() * 100;
-
-      if (this.isDeleting) { delta /= 2; }
-
-      if (!this.isDeleting && this.txt === fullTxt) {
-        delta = this.period;
-        this.isDeleting = true;
-      } else if (this.isDeleting && this.txt === '') {
+    <!-- MAIN JS SCRIPT -->
+    <script src="assets/js/main.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+      });
+    </script>
+    <script>
+      var TxtType = function (el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = "";
+        this.tick();
         this.isDeleting = false;
-        this.loopNum++;
-        delta = 500;
-      }
+      };
 
-      setTimeout(function () {
-        that.tick();
-      }, delta);
-    };
+      TxtType.prototype.tick = function () {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
 
-    window.onload = function () {
-      var elements = document.getElementsByClassName('typewrite');
-      for (var i = 0; i < elements.length; i++) {
-        var toRotate = elements[i].getAttribute('data-type');
-        var period = elements[i].getAttribute('data-period');
-        if (toRotate) {
-          new TxtType(elements[i], JSON.parse(toRotate), period);
+        if (this.isDeleting) {
+          this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+          this.txt = fullTxt.substring(0, this.txt.length + 1);
         }
-      }
-      // INJECT CSS
-      var css = document.createElement("style");
-      css.type = "text/css";
-      css.innerHTML = ".typewrite > .wrap { border-right: 0.0em solid #fff}";
-      document.body.appendChild(css);
-    };
-  </script>
-</body>
 
+        this.el.innerHTML = '<span class="wrap">' + this.txt + "</span>";
+
+        var that = this;
+        var delta = 200 - Math.random() * 100;
+
+        if (this.isDeleting) {
+          delta /= 2;
+        }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+          delta = this.period;
+          this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === "") {
+          this.isDeleting = false;
+          this.loopNum++;
+          delta = 500;
+        }
+
+        setTimeout(function () {
+          that.tick();
+        }, delta);
+      };
+
+      window.onload = function () {
+        var elements = document.getElementsByClassName("typewrite");
+        for (var i = 0; i < elements.length; i++) {
+          var toRotate = elements[i].getAttribute("data-type");
+          var period = elements[i].getAttribute("data-period");
+          if (toRotate) {
+            new TxtType(elements[i], JSON.parse(toRotate), period);
+          }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.0em solid #fff}";
+        document.body.appendChild(css);
+      };
+    </script>
+  </body>
 </html>

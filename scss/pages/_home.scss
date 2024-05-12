@@ -669,9 +669,14 @@
       padding: 15px;
       gap: 30px;
       max-width: 500px;
-      figure {
+      align-items: start;
+      .icon {
         flex-basis: 100px;
-        margin-top: 1rem;
+        margin-top: 6px;
+        fill: #ffbc13;
+      }
+      .invest {
+        fill: #55d4fd;
       }
 
       .title {
