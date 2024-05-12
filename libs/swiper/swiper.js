@@ -1,12 +1,27 @@
 const heroSlider = new Swiper(".heroSlider", {
-  effect: "fade",
+  effect: "creative",
+  creativeEffect: {
+    prev: {
+      shadow: true,
+      translate: ["-20%", 0, -1],
+    },
+    next: {
+      translate: ["100%", 0, 0],
+    },
+  },
   grabCursor: true,
   centeredSlides: true,
   slidesPerView: "auto",
   loop: true,
-  autoplay: true,
+  autoplay: {
+    delay: 6000,
+  },
   speed: 1000,
 
+  navigation: {
+    nextEl: ".hero-slide-next",
+    prevEl: ".hero-slide-prev",
+  },
   next: {
     translate: ["100rem"],
   },
