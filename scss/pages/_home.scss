@@ -443,7 +443,7 @@
 #portfolio {
   padding-top: 6rem;
   padding-bottom: 6rem;
-  background-color: $black-800;
+  background-image: url("../../assets/images/bg-section-1.jpg");
   .section-title {
     @include font($primaryFont, 36, semibold, normal, normal);
     &::after {
