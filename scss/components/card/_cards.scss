@@ -132,5 +132,15 @@
     top: 54%;
     left: 31rem;
     transform: translateY(-50%);
+
+    @include breakpoint(desktop1400) {
+          left: 33rem;
+    }
+    @include breakpoint(desktop1600) {
+          left: 40rem;
+    }
+    @include breakpoint(desktop1800) {
+          left: 47rem;
+    }
   }
 }
