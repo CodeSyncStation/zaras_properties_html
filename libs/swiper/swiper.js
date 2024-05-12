@@ -3,6 +3,9 @@ const heroSlider = new Swiper(".heroSlider", {
   grabCursor: true,
   centeredSlides: true,
   slidesPerView: "auto",
+  loop: true,
+  autoplay: true,
+  speed: 1000,
   coverflowEffect: {
     rotate: 50,
     stretch: 0,
