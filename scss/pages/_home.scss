@@ -57,7 +57,8 @@
   }
 }
 .whychoose {
-  padding: 6rem size(0);
+  padding-top: 6rem;
+  padding-bottom: 6rem;
   .section-top {
     display: flex;
     flex-direction: column;
@@ -87,7 +88,8 @@
 
 .investors {
   background-color: #1c2157;
-  padding: 6rem size(0);
+  padding-top: 6rem;
+  padding-bottom: 6rem;
   .section-top {
     display: flex;
     flex-direction: column;
@@ -190,7 +192,7 @@
   }
 }
 .contactus {
-  padding-top: 6rem;
+  padding-top: 10rem;
   padding-bottom: 6rem;
   .section-top {
     @include flex-column;
