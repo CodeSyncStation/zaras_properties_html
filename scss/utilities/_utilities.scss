@@ -4,3 +4,14 @@
 .text-primary {
   color: $primary !important;
 }
+.cursor-pointer {
+  cursor: pointer;
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+.modal-header {
+  position: absolute;
+  right: 1rem;
+  z-index: 3;
+}
